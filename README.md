@@ -32,7 +32,7 @@
 
 - [ ] SF Symbol
 - [ ] Blend
-- [ ] 
+- [ ] Effect
 
 ### Mask
 

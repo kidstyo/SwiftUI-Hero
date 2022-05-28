@@ -31,24 +31,31 @@ struct ContentView: View {
                         .navigationTitle(Text("TextEditor"))
                 }
 
-                NavigationLink("Button") {
-                    ButtonView()
-                        .navigationTitle(Text("Button"))
-                }
+                Group{
+                    NavigationLink("Button") {
+                        ButtonView()
+                            .navigationTitle(Text("Button"))
+                    }
 
-                NavigationLink("Image") {
-                    ImageView()
-                        .navigationTitle(Text("Image"))
-                }
+                    NavigationLink("Image") {
+                        ImageView()
+                            .navigationTitle(Text("Image"))
+                    }
 
-                NavigationLink("Mask") {
-                    MaskView()
-                        .navigationTitle(Text("Mask"))
-                }
+                    NavigationLink("Mask") {
+                        MaskView()
+                            .navigationTitle(Text("Mask"))
+                    }
 
-                NavigationLink("Scale and Rotation") {
-                    ScaleRotationView()
-                        .navigationTitle(Text("Scale and Rotation"))
+                    NavigationLink("Scale and Rotation") {
+                        ScaleRotationView()
+                            .navigationTitle(Text("Scale and Rotation"))
+                    }
+
+                    NavigationLink("Image Download") {
+                        ImageDownloadView()
+                            .navigationTitle(Text("Image Download"))
+                    }
                 }
             }
         }

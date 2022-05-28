@@ -35,6 +35,8 @@
 		8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29A28424DA3006DB416 /* MaskView.swift */; };
 		8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29D28424EBB006DB416 /* ScaleRotationView.swift */; };
 		8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29D28424EBB006DB416 /* ScaleRotationView.swift */; };
+		8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */; };
+		8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		8CD9E29728423F92006DB416 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8CD9E29A28424DA3006DB416 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		8CD9E29D28424EBB006DB416 /* ScaleRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRotationView.swift; sourceTree = "<group>"; };
+		8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadView.swift; sourceTree = "<group>"; };
+		8CD9E2A3284253E0006DB416 /* SwiftUI-Hero--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Hero--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				8CD9E29728423F92006DB416 /* ImageView.swift */,
 				8CD9E29A28424DA3006DB416 /* MaskView.swift */,
 				8CD9E29D28424EBB006DB416 /* ScaleRotationView.swift */,
+				8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		8C8182642840D33A0089735A = {
 			isa = PBXGroup;
 			children = (
+				8CD9E2A3284253E0006DB416 /* SwiftUI-Hero--iOS--Info.plist */,
 				8C8182692840D33B0089735A /* Shared */,
 				8C81827B2840D33B0089735A /* macOS */,
 				8C8182752840D33B0089735A /* Products */,
@@ -232,6 +238,7 @@
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
@@ -252,6 +259,7 @@
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8CD9E29928423F92006DB416 /* ImageView.swift in Sources */,
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
@@ -386,6 +394,7 @@
 				DEVELOPMENT_TEAM = 8774ZX9976;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Hero--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -416,6 +425,7 @@
 				DEVELOPMENT_TEAM = 8774ZX9976;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Hero--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
