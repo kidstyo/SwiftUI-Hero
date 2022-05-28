@@ -31,6 +31,8 @@
 		8C8182862840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
 		8CD9E29828423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
 		8CD9E29928423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
+		8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29A28424DA3006DB416 /* MaskView.swift */; };
+		8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29A28424DA3006DB416 /* MaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,7 @@
 		8C81827A2840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8CD9E29728423F92006DB416 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		8CD9E29A28424DA3006DB416 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 				8C6D79F2284208EA003EEF78 /* TextEditorView.swift */,
 				8C6D79F528420CAE003EEF78 /* ButtonView.swift */,
 				8CD9E29728423F92006DB416 /* ImageView.swift */,
+				8CD9E29A28424DA3006DB416 /* MaskView.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -228,6 +232,7 @@
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
+				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudContentView.swift in Sources */,
@@ -246,6 +251,7 @@
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
+				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudContentView.swift in Sources */,

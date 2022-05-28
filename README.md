@@ -31,6 +31,8 @@
 ### Image
 
 - [ ] SF Symbol
+- [ ] Blend
+- [ ] 
 
 ### Mask
 

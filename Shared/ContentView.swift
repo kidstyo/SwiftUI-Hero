@@ -40,6 +40,11 @@ struct ContentView: View {
                     ImageView()
                         .navigationTitle(Text("Image"))
                 }
+
+                NavigationLink("Mask") {
+                    MaskView()
+                        .navigationTitle(Text("Mask"))
+                }
             }
         }
     }

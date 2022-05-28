@@ -169,12 +169,12 @@ struct ImageView: View {
                 ZStack{
                     Image("Owen Pomery Light")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: 300, height: 300)
 
                     Image("Owen Pomery")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: 300, height: 300)
                         .blendMode(.difference)
                 }
@@ -182,12 +182,12 @@ struct ImageView: View {
                 ZStack{
                     Image("Owen Pomery Light")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: 300, height: 300)
 
                     Image("Owen Pomery")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: 300, height: 300)
                         .blendMode(.multiply)
                 }
