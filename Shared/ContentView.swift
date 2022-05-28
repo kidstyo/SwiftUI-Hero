@@ -25,6 +25,16 @@ struct ContentView: View {
                     TextFieldView(username: "", nickname: "")
                         .navigationTitle(Text("TextField"))
                 }
+
+                NavigationLink("TextEditor") {
+                    TextEditorView()
+                        .navigationTitle(Text("TextEditor"))
+                }
+
+                NavigationLink("Button") {
+                    ButtonView()
+                        .navigationTitle(Text("Button"))
+                }
             }
         }
     }

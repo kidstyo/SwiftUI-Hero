@@ -18,9 +18,11 @@
 
 ### TextField
 
-### SecureField
+- [x] SecureField
 
 ### TextEditor
+
+- [ ] custom placeholder
 
 ### Button
 
@@ -51,6 +53,8 @@
 # 待定
 
 - [ ] 📳
+- [ ] Alert
+- [ ] 提示推送
 - [ ] Widget
 - [ ] CloudKit
 - [ ] 捷径
