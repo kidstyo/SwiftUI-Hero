@@ -20,6 +20,11 @@ struct ContentView: View {
                     LabelView()
                         .navigationTitle(Text("Label"))
                 }
+
+                NavigationLink("TextField") {
+                    TextFieldView(username: "", nickname: "")
+                        .navigationTitle(Text("TextField"))
+                }
             }
         }
     }
