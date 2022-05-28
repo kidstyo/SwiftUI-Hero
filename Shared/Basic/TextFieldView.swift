@@ -10,23 +10,32 @@ import SwiftUI
 struct TextFieldView: View {
     @State var username: String
     @State var nickname: String
+    @State var password: String = ""
 
     var body: some View {
         VStack{
             Text("username is \(username)")
             Text("nickname is \(nickname)")
+            Text("password is \(password)")
 
             TextField("User Name", text: $username)
                 .onSubmit {
-                    print("onSubmit")
+                    print("username onSubmit")
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
-            TextField("Nick Name", text: $nickname)
+            TextField("Nick Name", text: $nickname){
+                    print("nickname is \(nickname)")
+                }
                 .onSubmit {
-                    print("onSubmit")
+                    print("nickname onSubmit")
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+
+            SecureField("Password", text: $password){
+                print("password is \(password)")
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle())
         }
         .padding()
     }
