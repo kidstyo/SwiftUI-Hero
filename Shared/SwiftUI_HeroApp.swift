@@ -13,9 +13,8 @@ struct SwiftUI_HeroApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            CloudContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

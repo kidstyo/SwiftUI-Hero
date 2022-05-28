@@ -17,12 +17,14 @@ struct ImageView: View {
                 .font(.largeTitle)
 
             Section {
+                Text("scaledToFill")
                 Image("Owen Pomery")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 300, height: 300)
                     .background(.orange)
 
+                Text("scaledToFit")
                 Image("Owen Pomery")
                     .resizable()
                     .scaledToFit()
@@ -48,6 +50,7 @@ struct ImageView: View {
                 // 暗区变为透明
                 // 亮度变为不透明的黑色
                 // 中等亮度变成灰色
+                Text("luminanceToAlpha")
                 Image("Owen Pomery")
                     .resizable()
                     .scaledToFit()
@@ -55,6 +58,7 @@ struct ImageView: View {
                     .luminanceToAlpha()
 
                 Group{
+                    Text("saturation")
                     // 饱和度 > 1，增加饱和度
                     // 1 原色
                     // 0 灰度
@@ -71,28 +75,33 @@ struct ImageView: View {
                         .saturation(0)
                 }
 
-                // 灰度 0 = 原色
-                Image("Owen Pomery")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .grayscale(0.5)
+                Group{
+                    // 灰度 0 = 原色
+                    Text("grayscale")
+                    Image("Owen Pomery")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                        .grayscale(0.5)
 
-                // 色调旋转
-                Image("Owen Pomery")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .hueRotation(Angle.degrees(100))
+                    // 色调旋转
+                    Text("hueRotation")
+                    Image("Owen Pomery")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                        .hueRotation(Angle.degrees(100))
 
-                // 270度，如果360则与原图一样
-                Image("Owen Pomery")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .hueRotation(Angle.degrees(270))
+                    // 270度，如果360则与原图一样
+                    Image("Owen Pomery")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                        .hueRotation(Angle.degrees(270))
+                }
 
                 Group{
+                    Text("contrast")
                     // 对比度
                     Image("Owen Pomery")
                         .resizable()
@@ -108,29 +117,35 @@ struct ImageView: View {
                         .contrast(-1.5)
                 }
 
-                Image("Owen Pomery")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .colorMultiply(.yellow)
+                Group{
+                    Text("colorMultiply")
+                    Image("Owen Pomery")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                        .colorMultiply(.yellow)
 
-                // 亮度
-                Image("Owen Pomery")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .brightness(0.2)
+                    // 亮度
+                    Text("brightness")
+                    Image("Owen Pomery")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                        .brightness(0.2)
 
-                Image("Owen Pomery")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .colorInvert()
+                    Text("colorInvert")
+                    Image("Owen Pomery")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                        .colorInvert()
+                }
             } header: {
                 Text("Effect")
             }
 
             Section {
+                Text("shadow")
                 Image("Owen Pomery")
                     .resizable()
                     .scaledToFit()
@@ -143,6 +158,7 @@ struct ImageView: View {
                     .frame(width: 300, height: 300)
                     .shadow(color: .purple, radius: 2, x: 20, y: 20)
 
+                Text("border")
                 Image("Owen Pomery")
                     .resizable()
                     .scaledToFit()
@@ -160,12 +176,14 @@ struct ImageView: View {
 
                 // 图片和背景颜色，也就是白色按照差值进行混合
                 // 共有21种混合模式
+                Text("blendMode difference")
                 Image("Owen Pomery")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 300, height: 300)
                     .blendMode(.difference)
 
+                Text("blendMode difference")
                 ZStack{
                     Image("Owen Pomery Light")
                         .resizable()
@@ -179,6 +197,7 @@ struct ImageView: View {
                         .blendMode(.difference)
                 }
 
+                Text("blendMode multiply")
                 ZStack{
                     Image("Owen Pomery Light")
                         .resizable()

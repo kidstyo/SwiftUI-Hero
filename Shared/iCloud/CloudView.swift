@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct CloudContentView: View {
+struct CloudView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -17,7 +17,7 @@ struct CloudContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        NavigationView {
+        VStack {
             List {
                 ForEach(items) { item in
                     NavigationLink {
@@ -83,8 +83,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct CloudContentView_Previews: PreviewProvider {
+struct CloudView_Previews: PreviewProvider {
     static var previews: some View {
-        CloudContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        CloudView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
