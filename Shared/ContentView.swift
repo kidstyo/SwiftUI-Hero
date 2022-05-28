@@ -45,6 +45,11 @@ struct ContentView: View {
                     MaskView()
                         .navigationTitle(Text("Mask"))
                 }
+
+                NavigationLink("Scale and Rotation") {
+                    ScaleRotationView()
+                        .navigationTitle(Text("Scale and Rotation"))
+                }
             }
         }
     }
