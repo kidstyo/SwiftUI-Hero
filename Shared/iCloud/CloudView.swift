@@ -8,39 +8,45 @@
 import SwiftUI
 import CoreData
 
+extension Item{
+    static func getListItemFetchRequest() -> NSFetchRequest<Item>{
+        let request = Item.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)]
+        return request
+    }
+}
+
 struct CloudView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
+
     private var items: FetchedResults<Item>
 
     var body: some View {
-        VStack {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
+        List {
+            ForEach(items) { item in
+                NavigationLink {
+                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                } label: {
+                    Text(item.timestamp!, formatter: itemFormatter)
                 }
-                .onDelete(perform: deleteItems)
             }
-            .toolbar {
+            .onDelete(perform: deleteItems)
+        }
+        .toolbar {
 #if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                EditButton()
+            }
 #endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+            ToolbarItem {
+                Button(action: addItem) {
+                    Label("Add Item", systemImage: "plus")
                 }
             }
-            Text("Select an item")
         }
     }
 
@@ -85,6 +91,8 @@ private let itemFormatter: DateFormatter = {
 
 struct CloudView_Previews: PreviewProvider {
     static var previews: some View {
-        CloudView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        NavigationView{
+            CloudView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        }
     }
 }

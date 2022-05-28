@@ -35,6 +35,13 @@ struct PersistenceController {
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
+
+        // MARK pos notie
+        guard let description = container.persistentStoreDescriptions.first else{
+            fatalError("No Descriptions found")
+        }
+        description.setOption(true as NSObject, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
+
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -52,5 +59,58 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+
+        // MARK what
+        container.viewContext.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+
+//        CloudManager.instance.addObserver()
     }
+}
+
+class CloudManager{
+    static let instance = CloudManager()
+
+    func addObserver(){
+        print("DEBUG addObserver")
+        NotificationCenter.default.addObserver(self, selector: #selector(self.processUpdate), name: .NSPersistentStoreRemoteChange, object: nil)
+    }
+
+    @objc func processUpdate(notioncation: NSNotification){
+        operationQueue.addOperation {
+            // process notification
+            print("DEBUG processUpdate")
+            // get our context
+
+            // get list items out of store
+        }
+    }
+
+    lazy var operationQueue: OperationQueue = {
+        var queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 1
+        return queue
+    }()
+
+//    func save(){
+//        do{
+//            try context.save()
+//
+//            // MARK 小组件刷新
+////            WidgetCenter.shared.reloadAllTimelines()
+//
+////            if managedObjectContext.hasChanges {
+////                    do {
+////                        try managedObjectContext.save()
+////                        WidgetCenter.shared.reloadAllTimelines()
+////                    } catch let error {
+////                        print("Error Save Oppty: \(error.localizedDescription)")
+////                    }
+////
+////                }
+//
+//            print("DEBUG Success save.")
+//        }catch let error{
+//            print("DEBUG Error saving. \(error.localizedDescription)")
+//        }
+//    }
 }

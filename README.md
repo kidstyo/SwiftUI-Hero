@@ -54,7 +54,10 @@
 
 ### MapKit
 
-###
+## CloudKit
+
+- [ ] 是否同步完成
+- [ ] isChange
 
 # 待定
 
@@ -62,7 +65,7 @@
 - [ ] Alert
 - [ ] 提示推送
 - [ ] Widget
-- [ ] CloudKit
+- [ ] 
 - [ ] 捷径
 - [ ] SIRI
 - [ ] Dark Mode
