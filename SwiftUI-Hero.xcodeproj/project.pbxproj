@@ -29,6 +29,8 @@
 		8C8182842840D33B0089735A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826E2840D33B0089735A /* Persistence.swift */; };
 		8C8182852840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
 		8C8182862840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
+		8CD9E29828423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
+		8CD9E29928423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		8C8182742840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827A2840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8CD9E29728423F92006DB416 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 				8C6D79EF2841FA44003EEF78 /* TextFieldView.swift */,
 				8C6D79F2284208EA003EEF78 /* TextEditorView.swift */,
 				8C6D79F528420CAE003EEF78 /* ButtonView.swift */,
+				8CD9E29728423F92006DB416 /* ImageView.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -220,6 +224,7 @@
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -237,6 +242,7 @@
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8CD9E29928423F92006DB416 /* ImageView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,

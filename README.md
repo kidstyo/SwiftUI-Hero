@@ -26,7 +26,11 @@
 
 ### Button
 
+- [ ] Custom Button
+
 ### Image
+
+- [ ] SF Symbol
 
 ### Mask
 

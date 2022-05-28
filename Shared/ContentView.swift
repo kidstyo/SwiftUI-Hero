@@ -35,6 +35,11 @@ struct ContentView: View {
                     ButtonView()
                         .navigationTitle(Text("Button"))
                 }
+
+                NavigationLink("Image") {
+                    ImageView()
+                        .navigationTitle(Text("Image"))
+                }
             }
         }
     }
