@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D79EC2841BE53003EEF78 /* LabelView.swift */; };
+		8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D79EC2841BE53003EEF78 /* LabelView.swift */; };
 		8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024B2840E46300ECEB99 /* ContentView.swift */; };
 		8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024B2840E46300ECEB99 /* ContentView.swift */; };
 		8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024F2840FE5C00ECEB99 /* TextView.swift */; };
@@ -24,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C6D79EC2841BE53003EEF78 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		8C75024B2840E46300ECEB99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C75024F2840FE5C00ECEB99 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		8C81826B2840D33B0089735A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				8C75024F2840FE5C00ECEB99 /* TextView.swift */,
+				8C6D79EC2841BE53003EEF78 /* LabelView.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -202,6 +206,7 @@
 			files = (
 				8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
+				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
@@ -215,6 +220,7 @@
 			files = (
 				8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
+				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,

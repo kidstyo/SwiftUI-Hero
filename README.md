@@ -8,8 +8,21 @@
 
 - [x] Font
 - [x] Weight
-- [ ] Style
-- [ ] Color
+- [x] Style
+- [x] Color
+- [ ] Design
+- [ ] Custom Font
+- [ ] Markdown
+
+### Label
+
+### TextField
+
+- [ ] 📳
+- [ ] Widget
+- [ ] CloudKit
+
+
 
 
 
