@@ -54,10 +54,16 @@
 
 ### MapKit
 
+## Core Data
+
 ## CloudKit
 
 - [ ] 是否同步完成
 - [ ] isChange
+
+## Mac
+
+- [ ] WWDC：Mac上的SwiftUI：构建基础（感觉讲的还不错）
 
 # 待定
 
@@ -65,11 +71,15 @@
 - [ ] Alert
 - [ ] 提示推送
 - [ ] Widget
-- [ ] 
+- [ ] Link
 - [ ] 捷径
 - [ ] SIRI
 - [ ] Dark Mode
 - [ ] 好评提示
+- [ ] 快捷键
+- [ ] Mac 拖拽
+- [ ] Live Photo
+- [ ] Video
 
 
 

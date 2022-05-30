@@ -68,6 +68,15 @@ struct ContentView: View {
                 } header: {
                     Text("iCloud")
                 }
+
+                Section {
+                    NavigationLink("Shortcut") {
+                        ShortcutView()
+                            .navigationTitle(Text("Shortcut"))
+                    }
+                } header: {
+                    Text("Shortcut")
+                }
             }
         }
     }
