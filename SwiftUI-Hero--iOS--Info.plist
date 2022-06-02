@@ -5,6 +5,7 @@
 	<key>INIntentsSupported</key>
 	<array>
 		<string>GetPeopleIntent</string>
+		<string>ViewPersonIntent</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
@@ -15,6 +16,7 @@
 	<array>
 		<string>GetPeopleIntent</string>
 		<string>MakeUppercaseIntent</string>
+		<string>ViewPersonIntent</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

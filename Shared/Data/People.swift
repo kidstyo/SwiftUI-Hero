@@ -19,7 +19,7 @@ let peopleArray: [Person] = [
     Person(id: 1, name: "Joe Bloggs", job: "Artist", iconName: "paintpalette"),
     Person(id: 2, name: "Peter Roberts", job: "Taxi Driver", iconName: "car"),
     Person(id: 3, name: "Sarah Love", job: "Author", iconName: "text.book.closed"),
-    Person(id: 4, name: "Kidstyo", job: "Artist", iconName: "hand.wave"),
+    Person(id: 4, name: "Kidstyo", job: "Artist", iconName: "hand.wave")
     // Wrong SF
 //    Person(id: 4, name: "Kidstyo", job: "Artist", iconName: "hand.wave.11")
 ]

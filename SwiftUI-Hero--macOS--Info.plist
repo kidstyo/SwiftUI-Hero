@@ -5,11 +5,13 @@
 	<key>INIntentsSupported</key>
 	<array>
 		<string>GetPeopleIntent</string>
+		<string>ViewPersonIntent</string>
 	</array>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>GetPeopleIntent</string>
 		<string>MakeUppercaseIntent</string>
+		<string>ViewPersonIntent</string>
 	</array>
 </dict>
 </plist>

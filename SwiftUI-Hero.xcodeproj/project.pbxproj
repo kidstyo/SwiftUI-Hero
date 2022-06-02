@@ -55,6 +55,8 @@
 		8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */; };
 		8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */; };
 		8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */; };
+		8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78312848FC5D00F1EACE /* ViewPersonIntentHandler.swift */; };
+		8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78312848FC5D00F1EACE /* ViewPersonIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,7 @@
 		8CFF78222848EDDE00F1EACE /* PeopleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViews.swift; sourceTree = "<group>"; };
 		8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NewIntents.intentdefinition; sourceTree = "<group>"; };
 		8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleIntentHandler.swift; sourceTree = "<group>"; };
+		8CFF78312848FC5D00F1EACE /* ViewPersonIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPersonIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */,
+				8CFF78312848FC5D00F1EACE /* ViewPersonIntentHandler.swift */,
 			);
 			path = "Intent Handlers";
 			sourceTree = "<group>";
@@ -423,6 +427,7 @@
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
+				8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
@@ -450,6 +455,7 @@
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
+				8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
