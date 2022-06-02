@@ -47,6 +47,14 @@
 		8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */; };
 		8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */; };
 		8CD9E2A728426114006DB416 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD9E2A628426114006DB416 /* CloudKit.framework */; };
+		8CFF781D2848ED7600F1EACE /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF781C2848ED7600F1EACE /* People.swift */; };
+		8CFF781E2848ED7600F1EACE /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF781C2848ED7600F1EACE /* People.swift */; };
+		8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78222848EDDE00F1EACE /* PeopleViews.swift */; };
+		8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78222848EDDE00F1EACE /* PeopleViews.swift */; };
+		8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */; };
+		8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */; };
+		8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */; };
+		8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +111,10 @@
 		8CD9E2A3284253E0006DB416 /* SwiftUI-Hero--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Hero--iOS--Info.plist"; sourceTree = "<group>"; };
 		8CD9E2A4284260CC006DB416 /* SwiftUI-Hero (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Hero (iOS).entitlements"; sourceTree = "<group>"; };
 		8CD9E2A628426114006DB416 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		8CFF781C2848ED7600F1EACE /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		8CFF78222848EDDE00F1EACE /* PeopleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViews.swift; sourceTree = "<group>"; };
+		8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NewIntents.intentdefinition; sourceTree = "<group>"; };
+		8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +188,8 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8CFF78202848EDB400F1EACE /* SiriKit */,
+				8CFF781B2848ED6500F1EACE /* Data */,
 				8CD9E2A8284261B4006DB416 /* iCloud */,
 				8C75024E2840FE5200ECEB99 /* Basic */,
 				8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */,
@@ -183,7 +197,6 @@
 				8C81826F2840D33B0089735A /* Assets.xcassets */,
 				8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */,
 				8C75024B2840E46300ECEB99 /* ContentView.swift */,
-				8C369E8F2844A918000F50BE /* ShortcutView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -221,6 +234,41 @@
 				8C81826D2840D33B0089735A /* CloudView.swift */,
 			);
 			path = iCloud;
+			sourceTree = "<group>";
+		};
+		8CFF781B2848ED6500F1EACE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF781C2848ED7600F1EACE /* People.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8CFF78202848EDB400F1EACE /* SiriKit */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF782C2848F0AD00F1EACE /* Intent Handlers */,
+				8CFF78212848EDD600F1EACE /* View */,
+				8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */,
+			);
+			path = SiriKit;
+			sourceTree = "<group>";
+		};
+		8CFF78212848EDD600F1EACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C369E8F2844A918000F50BE /* ShortcutView.swift */,
+				8CFF78222848EDDE00F1EACE /* PeopleViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CFF782C2848F0AD00F1EACE /* Intent Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF782D2848F0B800F1EACE /* GetPeopleIntentHandler.swift */,
+			);
+			path = "Intent Handlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +413,7 @@
 				8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
+				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
@@ -374,9 +423,12 @@
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
+				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
+				8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
+				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +440,7 @@
 				8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
+				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0A28450C2A00918DB9 /* Intents.intentdefinition in Sources */,
@@ -397,9 +450,12 @@
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
+				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
+				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
+				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

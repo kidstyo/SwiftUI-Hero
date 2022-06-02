@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ShortcutView: View {
     var body: some View {
-        Text("Hello, World!")
+        PeopleListView()
     }
 }
 
 struct ShortcutView_Previews: PreviewProvider {
     static var previews: some View {
-        ShortcutView()
+        NavigationView{
+            ShortcutView()
+        }
     }
 }
