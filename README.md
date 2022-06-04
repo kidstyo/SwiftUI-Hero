@@ -1,5 +1,17 @@
 # SwiftUI-Hero
 
+https://www.yuque.com/kidstyo/appledeveloper/yd96nb
+
+# 问题验证
+
+## M1 Mac
+
+### 3x3 评分，会崩溃
+
+### 3x3 拖拽，会崩溃
+
+# SwiftUI
+
 ## SwiftUI 基础控件
 
 ### Xcode
@@ -81,9 +93,7 @@
 - [ ] Live Photo
 - [ ] Video
 
-
-
-
+### 
 
 
 

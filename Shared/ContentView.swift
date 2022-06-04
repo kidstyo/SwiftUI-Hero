@@ -77,6 +77,15 @@ struct ContentView: View {
                 } header: {
                     Text("Shortcut")
                 }
+
+                Section {
+                    NavigationLink("3x3") {
+                        Today3x3View()
+                            .navigationTitle(Text("3x3"))
+                    }
+                } header: {
+                    Text("3x3")
+                }
             }
         }
     }
