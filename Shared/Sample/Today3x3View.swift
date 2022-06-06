@@ -10,7 +10,8 @@ import SwiftUI
 struct Today3x3View: View {
     var body: some View {
         List{
-            Section(header: Text(LocalizedStringKey("反馈"))){
+            if !ProcessInfo.processInfo.isiOSAppOnMac{
+                // Mac上会崩溃
                 HStack{
                     Image(systemName: "hands.sparkles")
                     VStack(alignment: .leading){
@@ -20,6 +21,13 @@ struct Today3x3View: View {
                             .foregroundColor(Color.secondary)
                     }
                 }
+            }
+
+            HStack{
+                Image(systemName: "mail")
+                Link(LocalizedStringKey("邮件反馈"), destination: URL(string: "mailto:kidstyo@foxmail.com")!)
+
+                Spacer()
             }
         }
     }

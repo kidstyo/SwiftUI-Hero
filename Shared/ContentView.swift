@@ -61,6 +61,15 @@ struct ContentView: View {
                 }
 
                 Section {
+                    NavigationLink("LivePhoto") {
+                        LivePhotoSampleView()
+                            .navigationTitle(Text("LivePhoto"))
+                    }
+                } header: {
+                    Text("LivePhoto")
+                }
+
+                Section {
                     NavigationLink("iCloud") {
                         CloudView()
                             .navigationTitle(Text("iCloud"))

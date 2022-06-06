@@ -40,6 +40,12 @@
 		8C8182862840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
+		8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */; };
+		8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */; };
+		8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2E284E471B00C33560 /* ImagePicker.swift */; };
+		8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2E284E471B00C33560 /* ImagePicker.swift */; };
+		8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */; };
+		8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */; };
 		8CD9E29828423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
 		8CD9E29928423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
 		8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29A28424DA3006DB416 /* MaskView.swift */; };
@@ -109,6 +115,9 @@
 		8C81827A2840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
+		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
+		8CCA4B2E284E471B00C33560 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoView.swift; sourceTree = "<group>"; };
 		8CD9E29728423F92006DB416 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8CD9E29A28424DA3006DB416 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		8CD9E29D28424EBB006DB416 /* ScaleRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRotationView.swift; sourceTree = "<group>"; };
@@ -194,6 +203,8 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8CCA4B2D284E471200C33560 /* Picker */,
+				8CCA4B29284E44C300C33560 /* LivePhoto */,
 				8CA44EDB284BBA8A00A16E1A /* Sample */,
 				8CFF78202848EDB400F1EACE /* SiriKit */,
 				8CFF781B2848ED6500F1EACE /* Data */,
@@ -232,6 +243,23 @@
 				8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		8CCA4B29284E44C300C33560 /* LivePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */,
+				8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */,
+			);
+			path = LivePhoto;
+			sourceTree = "<group>";
+		};
+		8CCA4B2D284E471200C33560 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				8CCA4B2E284E471B00C33560 /* ImagePicker.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		8CD9E2A528426114006DB416 /* Frameworks */ = {
@@ -429,8 +457,10 @@
 				8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
+				8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
@@ -445,6 +475,7 @@
 				8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
+				8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
 			);
@@ -458,8 +489,10 @@
 				8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
+				8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0A28450C2A00918DB9 /* Intents.intentdefinition in Sources */,
 				8CD9E29928423F92006DB416 /* ImageView.swift in Sources */,
@@ -474,6 +507,7 @@
 				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
+				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
 			);

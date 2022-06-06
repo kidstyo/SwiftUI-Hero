@@ -6,9 +6,22 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ## M1 Mac
 
-### 3x3 评分，会崩溃
+- [x] 3x3 评分，会崩溃
+- [ ] 3x3 拖拽，会崩溃
 
-### 3x3 拖拽，会崩溃
+## State
+
+- [ ] let
+- [ ] var
+- [ ] State
+- [ ] StateObject
+- [ ] Environment
+
+## Sw i f t
+
+- [ ] enum
+- [ ] class
+- [ ] struct
 
 # SwiftUI
 
@@ -66,6 +79,12 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ### MapKit
 
+### Live Photo
+
+- [x] 从相册选择和显示LivePhoto
+- [ ] LivePhoto转data
+- [ ] data转LivePhoto
+
 ## Core Data
 
 ## CloudKit
@@ -90,7 +109,6 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [ ] 好评提示
 - [ ] 快捷键
 - [ ] Mac 拖拽
-- [ ] Live Photo
 - [ ] Video
 
 ### 
