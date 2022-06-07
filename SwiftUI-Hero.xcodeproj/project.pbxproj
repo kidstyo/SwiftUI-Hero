@@ -30,6 +30,8 @@
 		8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024F2840FE5C00ECEB99 /* TextView.swift */; };
 		8C800B34284F735E00CB7FFF /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B33284F735E00CB7FFF /* LazyVGridView.swift */; };
 		8C800B35284F735E00CB7FFF /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B33284F735E00CB7FFF /* LazyVGridView.swift */; };
+		8C800B37284F7AF500CB7FFF /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */; };
+		8C800B38284F7AF500CB7FFF /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */; };
 		8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */; };
@@ -109,6 +111,7 @@
 		8C75024B2840E46300ECEB99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C75024F2840FE5C00ECEB99 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		8C800B33284F735E00CB7FFF /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
+		8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
 		8C81826B2840D33B0089735A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HeroApp.swift; sourceTree = "<group>"; };
 		8C81826D2840D33B0089735A /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
@@ -189,12 +192,13 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
-		8C800B32284F731F00CB7FFF /* Grid */ = {
+		8C800B32284F731F00CB7FFF /* LazyGrid */ = {
 			isa = PBXGroup;
 			children = (
 				8C800B33284F735E00CB7FFF /* LazyVGridView.swift */,
+				8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */,
 			);
-			path = Grid;
+			path = LazyGrid;
 			sourceTree = "<group>";
 		};
 		8C8182642840D33A0089735A = {
@@ -214,7 +218,7 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8C800B32284F731F00CB7FFF /* Grid */,
+				8C800B32284F731F00CB7FFF /* LazyGrid */,
 				8CCA4B2D284E471200C33560 /* Picker */,
 				8CCA4B29284E44C300C33560 /* LivePhoto */,
 				8CA44EDB284BBA8A00A16E1A /* Sample */,
@@ -468,6 +472,7 @@
 				8C369E902844A918000F50BE /* ShortcutView.swift in Sources */,
 				8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
+				8C800B37284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
@@ -501,6 +506,7 @@
 				8C369E912844A918000F50BE /* ShortcutView.swift in Sources */,
 				8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
+				8C800B38284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
