@@ -79,6 +79,15 @@ struct ContentView: View {
                 }
 
                 Section {
+                    NavigationLink("Grid") {
+                        LazyVGridView()
+                            .navigationTitle(Text("Grid"))
+                    }
+                } header: {
+                    Text("Grid")
+                }
+
+                Section {
                     NavigationLink("Shortcut") {
                         ShortcutView()
                             .navigationTitle(Text("Shortcut"))

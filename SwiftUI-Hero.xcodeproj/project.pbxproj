@@ -28,6 +28,8 @@
 		8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024B2840E46300ECEB99 /* ContentView.swift */; };
 		8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024F2840FE5C00ECEB99 /* TextView.swift */; };
 		8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75024F2840FE5C00ECEB99 /* TextView.swift */; };
+		8C800B34284F735E00CB7FFF /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B33284F735E00CB7FFF /* LazyVGridView.swift */; };
+		8C800B35284F735E00CB7FFF /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B33284F735E00CB7FFF /* LazyVGridView.swift */; };
 		8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */; };
@@ -106,6 +108,7 @@
 		8C6D79F528420CAE003EEF78 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		8C75024B2840E46300ECEB99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C75024F2840FE5C00ECEB99 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		8C800B33284F735E00CB7FFF /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
 		8C81826B2840D33B0089735A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HeroApp.swift; sourceTree = "<group>"; };
 		8C81826D2840D33B0089735A /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
@@ -186,6 +189,14 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
+		8C800B32284F731F00CB7FFF /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				8C800B33284F735E00CB7FFF /* LazyVGridView.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
 		8C8182642840D33A0089735A = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +214,7 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8C800B32284F731F00CB7FFF /* Grid */,
 				8CCA4B2D284E471200C33560 /* Picker */,
 				8CCA4B29284E44C300C33560 /* LivePhoto */,
 				8CA44EDB284BBA8A00A16E1A /* Sample */,
@@ -211,10 +223,10 @@
 				8CD9E2A8284261B4006DB416 /* iCloud */,
 				8C75024E2840FE5200ECEB99 /* Basic */,
 				8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */,
+				8C75024B2840E46300ECEB99 /* ContentView.swift */,
 				8C81826E2840D33B0089735A /* Persistence.swift */,
 				8C81826F2840D33B0089735A /* Assets.xcassets */,
 				8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */,
-				8C75024B2840E46300ECEB99 /* ContentView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -469,6 +481,7 @@
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
+				8C800B34284F735E00CB7FFF /* LazyVGridView.swift in Sources */,
 				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
@@ -501,6 +514,7 @@
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
+				8C800B35284F735E00CB7FFF /* LazyVGridView.swift in Sources */,
 				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
