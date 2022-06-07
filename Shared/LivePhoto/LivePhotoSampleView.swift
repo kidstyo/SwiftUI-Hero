@@ -7,8 +7,26 @@
 
 import SwiftUI
 
+import Photos
+
 struct LivePhotoSampleView: View {
     @StateObject var photoModel: PhotoModel = PhotoModel()
+    @State var liveData: Data?
+
+    func getLivePhotoData(livePhoto: PHLivePhoto) {
+         let assetResources = PHAssetResource.assetResources(for: livePhoto)
+         for assetRes in assetResources {
+            if assetRes.type == .pairedVideo {
+               PHAssetResourceManager.default().requestData(for: assetRes, options: nil, dataReceivedHandler: { (data) in
+                   liveData = data
+                   print("DEBUG \(liveData)")
+//                    self.uploadLivePhoto(data)
+                    }, completionHandler: { (error) in
+                        print(error)
+                })
+            }
+        }
+    }
 
     var body: some View {
         List{
@@ -24,7 +42,23 @@ struct LivePhotoSampleView: View {
                 Text("LivePhoto")
                 LivePhotoView(livephoto: $photoModel.livePhoto)
                     .scaledToFill()
+
+                Button {
+                    getLivePhotoData(livePhoto: photoModel.livePhoto!)
+                } label: {
+                    Text("LivePhoto To Data")
+                }
             }
+
+//            if liveData != nil{
+//                Text("liveData")
+//                let uiImage = UIImage(data: liveData!)
+//                if uiImage != nil{
+//                    Image(uiImage: uiImage!)
+//                        .resizable()
+//                        .scaledToFill()
+//                }
+//            }
 
             Button {
                 photoModel.showImagePicker.toggle()

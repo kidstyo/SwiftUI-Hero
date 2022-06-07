@@ -17,7 +17,7 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [ ] StateObject
 - [ ] Environment
 
-## Sw i f t
+## Swift
 
 - [ ] enum
 - [ ] class
@@ -78,6 +78,13 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 ### WebKit
 
 ### MapKit
+
+### PHPicker
+
+- [ ] 记载资源
+  - [ ] Image
+  - [ ] Movie
+  - [ ] LivePhoto
 
 ### Live Photo
 
