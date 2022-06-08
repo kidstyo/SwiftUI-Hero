@@ -17,6 +17,12 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [ ] StateObject
 - [ ] Environment
 
+## Sample
+
+### Things
+
+### Clear
+
 ## Swift
 
 - [ ] enum
@@ -39,15 +45,17 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [ ] Custom Font
 - [ ] Markdown
 
-### Label
+### ✅Label
 
 ### TextField
 
 - [x] SecureField
+- [ ] iOS16
 
 ### TextEditor
 
 - [ ] custom placeholder
+- [ ] iOS16
 
 ### Button
 
@@ -65,9 +73,10 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ### Picker
 
-### Grid
+### ✅LazyGrid
 
-- [ ] LazyVGrid
+- [x] LazyVGrid
+- [x] LazyHGrid
 
 ### DatePicker
 
@@ -121,8 +130,24 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [ ] 快捷键
 - [ ] Mac 拖拽
 - [ ] Video
+- [ ] iOS16
+  - [ ] https://developer.apple.com/videos/play/wwdc2022/10052/
+  - [ ] Charts
+  - [ ] Navigation
+  - [ ] Scene
+  - [ ] MenuBar
+  - [ ] iPad Table、Toolbar
+  - [ ] Search：还可以过滤Picker
+  - [ ] Sheet
+  - [ ] Menu
+  - [ ] Form
+  - [ ] Photo
+  - [ ] ShareLink
+  - [ ] Gradient
+    - [ ] SF 变得很好看
 
-### 
+  - [ ] Layout
+
 
 
 

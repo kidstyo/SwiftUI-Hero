@@ -31,6 +31,9 @@ class PhotoModel: ObservableObject {
     }
 }
 
+/*
+ UIImagePickerController
+ */
 struct ImagePicker: UIViewControllerRepresentable {
 
     // MARK: - Environment Object

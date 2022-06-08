@@ -61,12 +61,17 @@ struct ContentView: View {
                 }
 
                 Section {
+                    NavigationLink("PHPicker") {
+                        PHPickerView()
+                            .navigationTitle(Text("PHPicker"))
+                    }
+
                     NavigationLink("LivePhoto") {
                         LivePhotoSampleView()
                             .navigationTitle(Text("LivePhoto"))
                     }
                 } header: {
-                    Text("LivePhoto")
+                    Text("Photo")
                 }
 
                 Section {

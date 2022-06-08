@@ -36,6 +36,10 @@
 		8C800B3C284F83D300CB7FFF /* LazyHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */; };
 		8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */; };
 		8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */; };
+		8C800B412850879000CB7FFF /* PHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B402850879000CB7FFF /* PHPicker.swift */; };
+		8C800B422850879000CB7FFF /* PHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B402850879000CB7FFF /* PHPicker.swift */; };
+		8C800B44285087C300CB7FFF /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B43285087C300CB7FFF /* PHPickerView.swift */; };
+		8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B43285087C300CB7FFF /* PHPickerView.swift */; };
 		8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */; };
@@ -118,6 +122,8 @@
 		8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
 		8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStackView.swift; sourceTree = "<group>"; };
 		8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackView.swift; sourceTree = "<group>"; };
+		8C800B402850879000CB7FFF /* PHPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPicker.swift; sourceTree = "<group>"; };
+		8C800B43285087C300CB7FFF /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 		8C81826B2840D33B0089735A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HeroApp.swift; sourceTree = "<group>"; };
 		8C81826D2840D33B0089735A /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
@@ -235,7 +241,7 @@
 			children = (
 				8C800B39284F83AF00CB7FFF /* Stack */,
 				8C800B32284F731F00CB7FFF /* LazyGrid */,
-				8CCA4B2D284E471200C33560 /* Picker */,
+				8CCA4B2D284E471200C33560 /* CustomImagePicker */,
 				8CCA4B29284E44C300C33560 /* LivePhoto */,
 				8CA44EDB284BBA8A00A16E1A /* Sample */,
 				8CFF78202848EDB400F1EACE /* SiriKit */,
@@ -286,12 +292,14 @@
 			path = LivePhoto;
 			sourceTree = "<group>";
 		};
-		8CCA4B2D284E471200C33560 /* Picker */ = {
+		8CCA4B2D284E471200C33560 /* CustomImagePicker */ = {
 			isa = PBXGroup;
 			children = (
 				8CCA4B2E284E471B00C33560 /* ImagePicker.swift */,
+				8C800B402850879000CB7FFF /* PHPicker.swift */,
+				8C800B43285087C300CB7FFF /* PHPickerView.swift */,
 			);
-			path = Picker;
+			path = CustomImagePicker;
 			sourceTree = "<group>";
 		};
 		8CD9E2A528426114006DB416 /* Frameworks */ = {
@@ -509,11 +517,13 @@
 				8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */,
+				8C800B44285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
+				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,11 +555,13 @@
 				8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
+				8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
+				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
