@@ -18,11 +18,21 @@ struct TextFieldView: View {
             Text("nickname is \(nickname)")
             Text("password is \(password)")
 
-            TextField("User Name", text: $username)
-                .onSubmit {
-                    print("username onSubmit")
-                }
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            if #available(iOS 16.0, *) {
+                TextField("User Name iOS16", text: $username, axis: .vertical)
+                    .lineLimit(5...10)
+                    .onSubmit {
+                        print("username onSubmit")
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            } else {
+                // Fallback on earlier versions
+                TextField("User Name", text: $username)
+                    .onSubmit {
+                        print("username onSubmit")
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
 
             TextField("Nick Name", text: $nickname){
                     print("nickname is \(nickname)")

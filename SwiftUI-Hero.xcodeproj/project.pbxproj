@@ -32,6 +32,10 @@
 		8C800B35284F735E00CB7FFF /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B33284F735E00CB7FFF /* LazyVGridView.swift */; };
 		8C800B37284F7AF500CB7FFF /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */; };
 		8C800B38284F7AF500CB7FFF /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */; };
+		8C800B3B284F83D300CB7FFF /* LazyHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */; };
+		8C800B3C284F83D300CB7FFF /* LazyHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */; };
+		8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */; };
+		8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */; };
 		8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */; };
@@ -112,6 +116,8 @@
 		8C75024F2840FE5C00ECEB99 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		8C800B33284F735E00CB7FFF /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
 		8C800B36284F7AF500CB7FFF /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
+		8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStackView.swift; sourceTree = "<group>"; };
+		8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackView.swift; sourceTree = "<group>"; };
 		8C81826B2840D33B0089735A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HeroApp.swift; sourceTree = "<group>"; };
 		8C81826D2840D33B0089735A /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
@@ -201,6 +207,15 @@
 			path = LazyGrid;
 			sourceTree = "<group>";
 		};
+		8C800B39284F83AF00CB7FFF /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */,
+				8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		8C8182642840D33A0089735A = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +233,7 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8C800B39284F83AF00CB7FFF /* Stack */,
 				8C800B32284F731F00CB7FFF /* LazyGrid */,
 				8CCA4B2D284E471200C33560 /* Picker */,
 				8CCA4B29284E44C300C33560 /* LivePhoto */,
@@ -476,11 +492,13 @@
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
+				8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
+				8C800B3B284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
@@ -510,11 +528,13 @@
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
+				8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0A28450C2A00918DB9 /* Intents.intentdefinition in Sources */,
 				8CD9E29928423F92006DB416 /* ImageView.swift in Sources */,
+				8C800B3C284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,

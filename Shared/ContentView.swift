@@ -79,6 +79,20 @@ struct ContentView: View {
                 }
 
                 Section {
+                    NavigationLink("LazyHStack") {
+                        LazyHStackView()
+                            .navigationTitle(Text("LazyHStack"))
+                    }
+
+                    NavigationLink("LazyVStack") {
+                        LazyVStackView()
+                            .navigationTitle(Text("LazyVStack"))
+                    }
+                } header: {
+                    Text("LazyStack")
+                }
+
+                Section {
                     NavigationLink("LazyVGridView") {
                         LazyVGridView()
                             .navigationTitle(Text("LazyVGridView"))

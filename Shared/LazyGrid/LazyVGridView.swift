@@ -44,7 +44,6 @@ struct LazyVGridView: View {
                     ForEach(data, id: \.self) { item in
                         Text(item)
                             .lineLimit(1)
-                            .padding()
                             .border(Color.green, width: 1)
                     }
                 }
