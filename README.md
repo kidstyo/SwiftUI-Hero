@@ -86,6 +86,8 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ### Toggle
 
+### ActionSheet/confirmationDialog
+
 ### TabView
 
 ### WebKit
@@ -94,9 +96,9 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ### PHPicker
 
-- [ ] 记载资源
-  - [ ] Image
-  - [ ] Movie
+- [ ] 加载资源
+  - [x] Images
+  - [ ] Video
   - [ ] LivePhoto
 
 ### Live Photo

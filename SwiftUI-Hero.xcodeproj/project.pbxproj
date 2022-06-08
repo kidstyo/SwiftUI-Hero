@@ -40,6 +40,14 @@
 		8C800B422850879000CB7FFF /* PHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B402850879000CB7FFF /* PHPicker.swift */; };
 		8C800B44285087C300CB7FFF /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B43285087C300CB7FFF /* PHPickerView.swift */; };
 		8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B43285087C300CB7FFF /* PHPickerView.swift */; };
+		8C800B482850D57100CB7FFF /* MediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B472850D57100CB7FFF /* MediaPickerView.swift */; };
+		8C800B492850D57100CB7FFF /* MediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B472850D57100CB7FFF /* MediaPickerView.swift */; };
+		8C800B4C2850D62200CB7FFF /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B4B2850D62200CB7FFF /* CanvasViewModel.swift */; };
+		8C800B4D2850D62200CB7FFF /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B4B2850D62200CB7FFF /* CanvasViewModel.swift */; };
+		8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B4F2850D69200CB7FFF /* PhotosPickerView.swift */; };
+		8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B4F2850D69200CB7FFF /* PhotosPickerView.swift */; };
+		8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B502850D69300CB7FFF /* CameraPickerView.swift */; };
+		8C800B562850D69300CB7FFF /* CameraPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800B502850D69300CB7FFF /* CameraPickerView.swift */; };
 		8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */; };
 		8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */; };
@@ -124,6 +132,10 @@
 		8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackView.swift; sourceTree = "<group>"; };
 		8C800B402850879000CB7FFF /* PHPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPicker.swift; sourceTree = "<group>"; };
 		8C800B43285087C300CB7FFF /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
+		8C800B472850D57100CB7FFF /* MediaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerView.swift; sourceTree = "<group>"; };
+		8C800B4B2850D62200CB7FFF /* CanvasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
+		8C800B4F2850D69200CB7FFF /* PhotosPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosPickerView.swift; sourceTree = "<group>"; };
+		8C800B502850D69300CB7FFF /* CameraPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPickerView.swift; sourceTree = "<group>"; };
 		8C81826B2840D33B0089735A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		8C81826C2840D33B0089735A /* SwiftUI_HeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HeroApp.swift; sourceTree = "<group>"; };
 		8C81826D2840D33B0089735A /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
@@ -222,6 +234,17 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		8C800B4A2850D61800CB7FFF /* MediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				8C800B472850D57100CB7FFF /* MediaPickerView.swift */,
+				8C800B502850D69300CB7FFF /* CameraPickerView.swift */,
+				8C800B4F2850D69200CB7FFF /* PhotosPickerView.swift */,
+				8C800B4B2850D62200CB7FFF /* CanvasViewModel.swift */,
+			);
+			path = MediaPicker;
+			sourceTree = "<group>";
+		};
 		8C8182642840D33A0089735A = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +301,7 @@
 		8CA44EDB284BBA8A00A16E1A /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				8C800B4A2850D61800CB7FFF /* MediaPicker */,
 				8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */,
 			);
 			path = Sample;
@@ -498,10 +522,12 @@
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C800B37284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
 				8C6D79F628420CAE003EEF78 /* ButtonView.swift in Sources */,
+				8C800B4C2850D62200CB7FFF /* CanvasViewModel.swift in Sources */,
 				8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8C800B482850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
@@ -509,6 +535,7 @@
 				8C800B3B284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
+				8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -524,6 +551,7 @@
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
+				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,10 +564,12 @@
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C800B38284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
+				8C800B4D2850D62200CB7FFF /* CanvasViewModel.swift in Sources */,
 				8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
+				8C800B492850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8C357B0A28450C2A00918DB9 /* Intents.intentdefinition in Sources */,
@@ -547,6 +577,7 @@
 				8C800B3C284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
+				8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -562,6 +593,7 @@
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
+				8C800B562850D69300CB7FFF /* CameraPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +785,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUI-Hero--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "📷相机权限 Privacy - Camera Usage Description";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "📹录像权限";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "📹也需要这个，否则崩溃";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -786,6 +821,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUI-Hero--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "📷相机权限 Privacy - Camera Usage Description";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "📹录像权限";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "📹也需要这个，否则崩溃";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

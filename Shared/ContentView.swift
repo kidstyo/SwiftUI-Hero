@@ -11,6 +11,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
+                Section {
+                    NavigationLink("3x3") {
+                        Today3x3View()
+                            .navigationTitle(Text("3x3"))
+                    }
+                    NavigationLink("Media Picker") {
+                        MediaPickerView()
+                            .navigationTitle(Text("Media Picker"))
+                    }
+                } header: {
+                    Text("Sample")
+                }
+
                 Section{
                     NavigationLink("Text") {
                         TextView()
@@ -118,15 +131,6 @@ struct ContentView: View {
                     }
                 } header: {
                     Text("Shortcut")
-                }
-
-                Section {
-                    NavigationLink("3x3") {
-                        Today3x3View()
-                            .navigationTitle(Text("3x3"))
-                    }
-                } header: {
-                    Text("3x3")
                 }
             }
         }
