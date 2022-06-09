@@ -31,6 +31,10 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 # SwiftUI
 
+## UX
+
+### typography
+
 ## SwiftUI 基础控件
 
 ### Xcode
@@ -96,10 +100,11 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ### PHPicker
 
-- [ ] 加载资源
+- [x] 加载资源
   - [x] Images
-  - [ ] Video
-  - [ ] LivePhoto
+  - [x] Video
+    - [x] 需要设置两个权限
+  - [x] LivePhoto
 
 ### Live Photo
 

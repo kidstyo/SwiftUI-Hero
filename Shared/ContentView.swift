@@ -24,12 +24,21 @@ struct ContentView: View {
                     Text("Sample")
                 }
 
-                Section{
+                Section {
                     NavigationLink("Text") {
                         TextView()
                             .navigationTitle(Text("Text"))
                     }
 
+                    NavigationLink("CustomFont") {
+                        CustomFontView()
+                            .navigationTitle(Text("CustomFont"))
+                    }
+                } header: {
+                    Text("Typography")
+                }
+
+                Section{
                     NavigationLink("Label") {
                         LabelView()
                             .navigationTitle(Text("Label"))

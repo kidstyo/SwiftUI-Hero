@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TextView: View {
-
     var now = Date()
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -16,9 +15,29 @@ struct TextView: View {
         return formatter
     }()
 
+    let steveJobs = "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试\nI am honored to be with you today at your commencement from one of the finest universities in the world. I never graduated from college. Truth be told, this is the closest I’ve ever gotten to a college graduation. Today I want to tell you three stories from my life. That’s it. No big deal. Just three stories.\nStay Hungry. Stay Foolish.\nThank you all very much."
+
     var body: some View {
         ZStack{
             List{
+                Group{
+                    Text(steveJobs)
+                        .font(.body.leading(.standard))
+                        .padding()
+
+                    Text("你好 Hello")
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                        .font(.custom("AmericanTypewriter", size: 60))
+        //                .background(.clear)
+        //                .background(.red)
+        //                .background(.ultraThinMaterial)
+                        .allowsHitTesting(false)
+
+                    Text("你好 Hello, Pic!")
+                        .background(Text("你好 Hello World").font(.largeTitle), alignment: .bottom)
+                        .foregroundColor(.green)
+                }
+
                 Section {
                     Group{
                         Text("你好 Hello, World! largeTitle")
@@ -98,10 +117,6 @@ struct TextView: View {
                 } header: {
                     Text("Color")
                 }
-
-                Text("你好 Hello, Pic!")
-                    .background(Text("你好 Hello World").font(.largeTitle), alignment: .bottom)
-                    .foregroundColor(.green)
 
                 Section{
                     // 添加文本视图，设置文字的字体为标题样式，该样式可以根据屏幕尺寸的大小，自动调整自身的尺寸
@@ -202,14 +217,6 @@ struct TextView: View {
                     Text("富文本")
                 }
             }
-
-            Text("你好 Hello")
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                .font(.custom("AmericanTypewriter", size: 60))
-//                .background(.clear)
-//                .background(.red)
-//                .background(.ultraThinMaterial)
-                .allowsHitTesting(false)
         }
     }
 }
@@ -219,3 +226,4 @@ struct TextView_Previews: PreviewProvider {
         TextView()
     }
 }
+

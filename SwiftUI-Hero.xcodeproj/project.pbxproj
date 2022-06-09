@@ -60,6 +60,8 @@
 		8C8182862840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
+		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
+		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */; };
 		8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */; };
 		8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2E284E471B00C33560 /* ImagePicker.swift */; };
@@ -145,6 +147,7 @@
 		8C81827A2840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
+		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
 		8CCA4B2E284E471B00C33560 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoView.swift; sourceTree = "<group>"; };
@@ -203,7 +206,6 @@
 		8C75024E2840FE5200ECEB99 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				8C75024F2840FE5C00ECEB99 /* TextView.swift */,
 				8C6D79EC2841BE53003EEF78 /* LabelView.swift */,
 				8C6D79EF2841FA44003EEF78 /* TextFieldView.swift */,
 				8C6D79F2284208EA003EEF78 /* TextEditorView.swift */,
@@ -262,6 +264,7 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8CA5984C28520755002E8264 /* Typography */,
 				8C800B39284F83AF00CB7FFF /* Stack */,
 				8C800B32284F731F00CB7FFF /* LazyGrid */,
 				8CCA4B2D284E471200C33560 /* CustomImagePicker */,
@@ -305,6 +308,15 @@
 				8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		8CA5984C28520755002E8264 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				8C75024F2840FE5C00ECEB99 /* TextView.swift */,
+				8CA5984D2852076A002E8264 /* CustomFontView.swift */,
+			);
+			path = Typography;
 			sourceTree = "<group>";
 		};
 		8CCA4B29284E44C300C33560 /* LivePhoto */ = {
@@ -540,6 +552,7 @@
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8C800B34284F735E00CB7FFF /* LazyVGridView.swift in Sources */,
+				8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */,
 				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
@@ -582,6 +595,7 @@
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8C800B35284F735E00CB7FFF /* LazyVGridView.swift in Sources */,
+				8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */,
 				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
