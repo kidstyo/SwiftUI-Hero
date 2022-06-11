@@ -53,16 +53,20 @@ struct TextView: View {
                         .font(.headline)
                     Text("你好 Hello, World! body")
                         .font(.body)
-                    Text("你好 Hello, World! subheadline")
-                        .font(.subheadline)
-                    Text("你好 Hello, World! callout")
-                        .font(.callout)
-                    Text("你好 Hello, World! footnote")
-                        .font(.footnote)
-                    Text("你好 Hello, World! caption")
-                        .font(.caption)
-                    Text("你好 Hello, World! caption2")
-                        .font(.caption2)
+                    Group{
+                        Text("你好 Hello, World! subheadline")
+                            .font(.subheadline)
+                        Text("你好 Hello, World! callout")
+                            .font(.callout)
+                        Text("你好 Hello, World! footnote")
+                            .font(.footnote)
+                    }
+                    Group{
+                        Text("你好 Hello, World! caption")
+                            .font(.caption)
+                        Text("你好 Hello, World! caption2")
+                            .font(.caption2)
+                    }
                 } header: {
                     Text("Font")
                 }

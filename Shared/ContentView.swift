@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
+                // MARK: Sample
                 Section {
                     NavigationLink("3x3") {
                         Today3x3View()
@@ -24,6 +25,7 @@ struct ContentView: View {
                     Text("Sample")
                 }
 
+                // MARK: Typography
                 Section {
                     NavigationLink("Text") {
                         TextView()
@@ -54,32 +56,35 @@ struct ContentView: View {
                             .navigationTitle(Text("TextEditor"))
                     }
 
-                    Group{
-                        NavigationLink("Button") {
-                            ButtonView()
-                                .navigationTitle(Text("Button"))
-                        }
-
-                        NavigationLink("Image") {
-                            ImageView()
-                                .navigationTitle(Text("Image"))
-                        }
-
-                        NavigationLink("Mask") {
-                            MaskView()
-                                .navigationTitle(Text("Mask"))
-                        }
-
-                        NavigationLink("Scale and Rotation") {
-                            ScaleRotationView()
-                                .navigationTitle(Text("Scale and Rotation"))
-                        }
-
-                        NavigationLink("Image Download") {
-                            ImageDownloadView()
-                                .navigationTitle(Text("Image Download"))
-                        }
+                    NavigationLink("Button") {
+                        ButtonView()
+                            .navigationTitle(Text("Button"))
                     }
+                }
+
+                // MARK: Image
+                Section {
+                    NavigationLink("Image") {
+                        ImageView()
+                            .navigationTitle(Text("Image"))
+                    }
+
+                    NavigationLink("Mask") {
+                        MaskView()
+                            .navigationTitle(Text("Mask"))
+                    }
+
+                    NavigationLink("Scale and Rotation") {
+                        ScaleRotationView()
+                            .navigationTitle(Text("Scale and Rotation"))
+                    }
+
+                    NavigationLink("Image Download") {
+                        ImageDownloadView()
+                            .navigationTitle(Text("Image Download"))
+                    }
+                } header: {
+                    Text("Image")
                 }
 
                 Section {
@@ -105,6 +110,7 @@ struct ContentView: View {
                     Text("iCloud")
                 }
 
+                // MARK: LazyStack
                 Section {
                     NavigationLink("LazyHStack") {
                         LazyHStackView()
@@ -119,18 +125,29 @@ struct ContentView: View {
                     Text("LazyStack")
                 }
 
+                // MARK: LazyGrid
                 Section {
-                    NavigationLink("LazyVGridView") {
+                    NavigationLink("LazyVGrid") {
                         LazyVGridView()
-                            .navigationTitle(Text("LazyVGridView"))
+                            .navigationTitle(Text("LazyVGrid"))
                     }
 
-                    NavigationLink("LazyHGridView") {
+                    NavigationLink("LazyHGrid") {
                         LazyHGridView()
-                            .navigationTitle(Text("LazyHGridView"))
+                            .navigationTitle(Text("LazyHGrid"))
                     }
                 } header: {
                     Text("LazyGrid")
+                }
+
+                // MARK: Sheet
+                Section {
+                    NavigationLink("BottomSheet") {
+                        BottomSheetView()
+                            .navigationTitle(Text("BottomSheet"))
+                    }
+                } header: {
+                    Text("Sheet")
                 }
 
                 Section {

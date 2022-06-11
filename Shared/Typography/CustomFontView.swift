@@ -35,7 +35,6 @@ struct CustomFontView: View {
                     .font(.system(size: customSize))
                 Text("你好世界 Hello World! Helvetica")
                     .font(.custom("Helvetica", size: customSize))
-
                 Text("你好世界 Hello World! AmericanTypewriter")
                     .font(.custom("AmericanTypewriter", size: customSize))
                 Text("你好世界 Hello World! Avenir-Medium")

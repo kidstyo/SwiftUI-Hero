@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C3622854539D0080CD3C /* BottomSheetView.swift */; };
+		8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C3622854539D0080CD3C /* BottomSheetView.swift */; };
+		8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */; };
+		8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */; };
 		8C357AFB28450BB800918DB9 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C357AFA28450BB800918DB9 /* Intents.framework */; };
 		8C357AFE28450BB800918DB9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357AFD28450BB800918DB9 /* IntentHandler.swift */; };
 		8C357B0228450BB800918DB9 /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C357AF928450BB800918DB9 /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -114,6 +118,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C08C3622854539D0080CD3C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModelView.swift; sourceTree = "<group>"; };
 		8C357AF928450BB800918DB9 /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C357AFA28450BB800918DB9 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		8C357AFD28450BB800918DB9 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -192,6 +198,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C08C361285452C70080CD3C /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				8C08C3622854539D0080CD3C /* BottomSheetView.swift */,
+				8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
 		8C357AFC28450BB800918DB9 /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +279,7 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8C08C361285452C70080CD3C /* Sheet */,
 				8CA5984C28520755002E8264 /* Typography */,
 				8C800B39284F83AF00CB7FFF /* Stack */,
 				8C800B32284F731F00CB7FFF /* LazyGrid */,
@@ -548,6 +564,7 @@
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
+				8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */,
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -563,6 +580,7 @@
 				8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
+				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
 			);
@@ -591,6 +609,7 @@
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
+				8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */,
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -606,6 +625,7 @@
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
+				8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B562850D69300CB7FFF /* CameraPickerView.swift in Sources */,
 			);

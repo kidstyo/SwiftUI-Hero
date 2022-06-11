@@ -112,6 +112,12 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [ ] LivePhoto转data
 - [ ] data转LivePhoto
 
+## 自定义组件
+
+### Sheet
+
+- [ ] Bottom Sheet
+
 ## Core Data
 
 ## CloudKit
@@ -122,6 +128,10 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 ## Mac
 
 - [ ] WWDC：Mac上的SwiftUI：构建基础（感觉讲的还不错）
+
+## iOS16
+
+### Swift Charts
 
 # 待定
 
@@ -154,7 +164,6 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
     - [ ] SF 变得很好看
 
   - [ ] Layout
-
 
 
 
