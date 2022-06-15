@@ -51,12 +51,12 @@ struct TextView: View {
                     }
                     Text("你好 Hello, World! headline")
                         .font(.headline)
-                    Text("你好 Hello, World! body")
+                    Text("你好 Hello, World! body 17")
                         .font(.body)
                     Group{
                         Text("你好 Hello, World! subheadline")
                             .font(.subheadline)
-                        Text("你好 Hello, World! callout")
+                        Text("你好 Hello, World! callout 16")
                             .font(.callout)
                         Text("你好 Hello, World! footnote")
                             .font(.footnote)
