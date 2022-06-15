@@ -25,26 +25,58 @@ struct CloudView: View {
 
     private var items: FetchedResults<Item>
 
+    @State private var syncStateStr = ""
+    @State private var importing = false
+    @State private var publisher = NotificationCenter.default.publisher(for: NSPersistentCloudKitContainer.eventChangedNotification)
+    
     var body: some View {
-        List {
-            ForEach(items) { item in
-                NavigationLink {
-                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                } label: {
-                    Text(item.timestamp!, formatter: itemFormatter)
+        VStack{
+            Text("syncState:\(syncStateStr)")
+            if importing {
+                ProgressView()
+            }
+            List {
+                ForEach(items) { item in
+                    NavigationLink {
+                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                    } label: {
+                        Text(item.timestamp!, formatter: itemFormatter)
+                    }
+                }
+                .onDelete(perform: deleteItems)
+            }
+            .toolbar {
+    #if os(iOS)
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+    #endif
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
                 }
             }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-#if os(iOS)
-            ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
-            }
-#endif
-            ToolbarItem {
-                Button(action: addItem) {
-                    Label("Add Item", systemImage: "plus")
+            .onReceive(publisher){ notification in
+                if let userInfo = notification.userInfo {
+                    if let event = userInfo["event"] as? NSPersistentCloudKitContainer.Event {
+                        if event.type == .import {
+                            importing = true
+                            syncStateStr = "import"
+                        }
+                        else {
+                            importing = false
+                            if event.type == .export{
+                                syncStateStr = "export"
+                            }
+                            else if event.type == .setup{
+                                syncStateStr = "setup"
+                            }
+                            else{
+                                syncStateStr = "default"
+                            }
+                        }
+                    }
                 }
             }
         }
