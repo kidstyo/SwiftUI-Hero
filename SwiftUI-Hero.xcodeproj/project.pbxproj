@@ -66,6 +66,8 @@
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
+		8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
+		8CAFBA2C285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
 		8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */; };
 		8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */; };
 		8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2E284E471B00C33560 /* ImagePicker.swift */; };
@@ -154,6 +156,7 @@
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
 		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
+		8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
 		8CCA4B2E284E471B00C33560 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoView.swift; sourceTree = "<group>"; };
@@ -295,6 +298,7 @@
 				8C81826E2840D33B0089735A /* Persistence.swift */,
 				8C81826F2840D33B0089735A /* Assets.xcassets */,
 				8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */,
+				8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -583,6 +587,7 @@
 				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
+				8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +633,7 @@
 				8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B562850D69300CB7FFF /* CameraPickerView.swift in Sources */,
+				8CAFBA2C285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

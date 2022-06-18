@@ -21,6 +21,11 @@ struct ContentView: View {
                         MediaPickerView()
                             .navigationTitle(Text("Media Picker"))
                     }
+
+                    NavigationLink("DisclosureGroup") {
+                        DisclosureGroupView()
+                            .navigationTitle(Text("DisclosureGroup"))
+                    }
                 } header: {
                     Text("Sample")
                 }
