@@ -64,6 +64,12 @@
 		8C8182862840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
+		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
+		8CA4A39E285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
+		8CA4A3A0285F776500589C56 /* CalendarSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39F285F776500589C56 /* CalendarSampleView.swift */; };
+		8CA4A3A1285F776500589C56 /* CalendarSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39F285F776500589C56 /* CalendarSampleView.swift */; };
+		8CA4A3A4285F77FF00589C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A3285F77FF00589C56 /* DateExtension.swift */; };
+		8CA4A3A5285F77FF00589C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A3285F77FF00589C56 /* DateExtension.swift */; };
 		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
@@ -155,6 +161,9 @@
 		8C81827A2840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
+		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
+		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
+		8CA4A3A3285F77FF00589C56 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
 		8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
@@ -282,6 +291,8 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8CA4A3A2285F77F300589C56 /* Extension */,
+				8CA4A39B285F76D900589C56 /* Calendar */,
 				8C08C361285452C70080CD3C /* Sheet */,
 				8CA5984C28520755002E8264 /* Typography */,
 				8C800B39284F83AF00CB7FFF /* Stack */,
@@ -328,6 +339,23 @@
 				8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		8CA4A39B285F76D900589C56 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */,
+				8CA4A39F285F776500589C56 /* CalendarSampleView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8CA4A3A2285F77F300589C56 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CA4A3A3285F77FF00589C56 /* DateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		8CA5984C28520755002E8264 /* Typography */ = {
@@ -550,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C369E902844A918000F50BE /* ShortcutView.swift in Sources */,
+				8CA4A3A4285F77FF00589C56 /* DateExtension.swift in Sources */,
 				8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C800B37284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
@@ -569,6 +598,7 @@
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */,
+				8CA4A3A0285F776500589C56 /* CalendarSampleView.swift in Sources */,
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -583,6 +613,7 @@
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
+				8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
 				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
@@ -596,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C369E912844A918000F50BE /* ShortcutView.swift in Sources */,
+				8CA4A3A5285F77FF00589C56 /* DateExtension.swift in Sources */,
 				8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8C800B38284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
@@ -615,6 +647,7 @@
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */,
+				8CA4A3A1285F776500589C56 /* CalendarSampleView.swift in Sources */,
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502512840FE5C00ECEB99 /* TextView.swift in Sources */,
@@ -629,6 +662,7 @@
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
+				8CA4A39E285F76EC00589C56 /* MyCalendarView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
 				8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,

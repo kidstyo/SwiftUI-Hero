@@ -2,7 +2,17 @@
 
 https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
+# Now
+
+## 🔴 热力图
+
+# Structure
+
 # 问题验证
+
+### 🔴 性能问题
+
+- [ ] ContextMenu貌似界面初始化的时候就会进行？，如果有很多Menu就会卡
 
 ## M1 Mac
 
@@ -19,17 +29,23 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ## Sample
 
-### Things
+### 🔴 Things
 
 ### Clear
 
-多目录拖拽
+### Cubox
+
+- [ ] 多目录拖拽
 
 ## Swift
 
 - [ ] enum
 - [ ] class
 - [ ] struct
+- [ ] map
+  - [ ] filter
+  - [ ] sort
+
 
 # SwiftUI
 
@@ -84,6 +100,8 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 - [x] LazyVGrid
 - [x] LazyHGrid
 
+### List
+
 ### DatePicker
 
 ### ColorPicker
@@ -95,6 +113,8 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 ### ActionSheet/confirmationDialog
 
 ### TabView
+
+### Search
 
 ### WebKit
 
@@ -110,7 +130,7 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
     - [x] 需要设置两个权限
   - [x] LivePhoto
 
-### Live Photo
+### 🔴 Live Photo
 
 - [x] 从相册选择和显示LivePhoto
 - [ ] LivePhoto转data
@@ -118,7 +138,7 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ## 自定义组件
 
-### Sheet
+### 🔴 Sheet
 
 - [ ] Bottom Sheet
 

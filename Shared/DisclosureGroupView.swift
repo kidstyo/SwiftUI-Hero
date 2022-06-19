@@ -12,22 +12,38 @@ struct DisclosureGroupView: View {
     let ukAuthors = ["克莉絲蒂", "柯南·道爾", "狄克森·卡爾", "G·K·切斯特頓", "多蘿西·L·塞耶斯", "約瑟芬·鐵伊"]
 
     var body: some View {
-        List{
-            DisclosureGroup("日本推理作家") {
-                ForEach(japanAuthors, id: \.self) { author in
-                    Text(author)
-                }
-            }
-            DisclosureGroup("英國推理作家") {
-                ForEach(ukAuthors, id: \.self) { author in
-                    Text(author)
-                }
-            }
+        VStack{
             DisclosureGroup("日本推理作家") {
                 ForEach(japanAuthors, id: \.self) { author in
                     DisclosureGroup("英國推理作家") {
                         ForEach(ukAuthors, id: \.self) { author in
                             Text(author)
+                        }
+                    }
+                }
+            }
+
+            List{
+                DisclosureGroup("日本推理作家") {
+
+                }
+
+                DisclosureGroup("日本推理作家") {
+                    ForEach(japanAuthors, id: \.self) { author in
+                        Text(author)
+                    }
+                }
+                DisclosureGroup("英國推理作家") {
+                    ForEach(ukAuthors, id: \.self) { author in
+                        Text(author)
+                    }
+                }
+                DisclosureGroup("日本推理作家") {
+                    ForEach(japanAuthors, id: \.self) { author in
+                        DisclosureGroup("英國推理作家") {
+                            ForEach(ukAuthors, id: \.self) { author in
+                                Text(author)
+                            }
                         }
                     }
                 }

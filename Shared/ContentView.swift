@@ -26,10 +26,28 @@ struct ContentView: View {
                         DisclosureGroupView()
                             .navigationTitle(Text("DisclosureGroup"))
                     }
+
+                    Section {
+                        NavigationLink("Shortcut") {
+                            ShortcutView()
+                                .navigationTitle(Text("Shortcut"))
+                        }
+                    } header: {
+                        Text("Shortcut")
+                    }
                 } header: {
                     Text("Sample")
                 }
 
+                Section {
+                    NavigationLink("CalendarSample") {
+                        CalendarSampleView()
+                            .navigationTitle(Text("CalendarSample"))
+                    }
+                } header: {
+                    Text("Calendar")
+                }
+                
                 // MARK: Typography
                 Section {
                     NavigationLink("Text") {
@@ -153,15 +171,6 @@ struct ContentView: View {
                     }
                 } header: {
                     Text("Sheet")
-                }
-
-                Section {
-                    NavigationLink("Shortcut") {
-                        ShortcutView()
-                            .navigationTitle(Text("Shortcut"))
-                    }
-                } header: {
-                    Text("Shortcut")
                 }
             }
         }
