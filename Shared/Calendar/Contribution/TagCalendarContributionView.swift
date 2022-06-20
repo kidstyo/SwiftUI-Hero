@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-struct MyCalendarContributionView: View {
+/*
+ 3x3 Tag
+ */
+struct TagCalendarContributionView: View {
     @Binding var selectDate: Date
 
     // Month update on arrow button clicks...
@@ -33,6 +36,10 @@ struct MyCalendarContributionView: View {
     // 选中的显示大小
     let CHOSE_CIRCLE_SIZE: CGFloat = 32
     let POINT_SIZE: CGFloat = 6
+
+    // MARK: 常量
+    let MONTH_SIZE: CGFloat = 25
+    let DAY_SIZE: CGFloat = 26
 
     func updateCheck(){
         print("updateCheck:\(currentYear)-\(currentMonth)")
@@ -119,7 +126,9 @@ struct MyCalendarContributionView: View {
                         Text(dateStringArray[0])
                             .font(.body.bold())
 
-                        Text(dateStringArray[1])
+//                        Text(dateStringArray[1])
+//                            .font(.body.bold())
+                        Text(currentMonth.toMonth())
                             .font(.body.bold())
                     }
                 }
@@ -142,7 +151,7 @@ struct MyCalendarContributionView: View {
                         updateMonth(delta: 1)
                     }
             }
-            .padding(.horizontal)
+            .padding(.horizontal, 13)
 
             let monthColumns = Array(repeating: GridItem(.flexible()), count: 12)
             LazyVGrid(columns: monthColumns, spacing: 5) {
@@ -151,14 +160,13 @@ struct MyCalendarContributionView: View {
                     monthRectangle(monthIndex: monthIndex)
                 }
             }
-            .padding(.horizontal)
+            .padding(.horizontal, 13)
 
-            // Day View...
-            HStack(spacing: 0){
+            // MARK: Week
+            HStack{
                 ForEach(weekDayStrs, id: \.self){day in
                     Text(day)
-                        .font(.footnote)
-                        .fontWeight(.semibold)
+                        .font(.caption2)
                         .foregroundColor(.secondary)
                         .frame(maxWidth: .infinity)
                 }
@@ -167,9 +175,9 @@ struct MyCalendarContributionView: View {
             // Dates...
             // Lazy Grid
             let columns = Array(repeating: GridItem(.flexible()), count: 7)
-            LazyVGrid(columns: columns, spacing: 5) {
+            LazyVGrid(columns: columns) {
                 ForEach(dateValueArray){value in
-                    CardView(value: value)
+                    DayRectangle(value: value)
 //                        .background(.red)
 //                        .background(
 //                            // 选中效果
@@ -179,7 +187,7 @@ struct MyCalendarContributionView: View {
 //                                .opacity(isSameDay(date1: value.date, date2: currentDate) ? 0.3 : 0)
 //                        )
                         .onTapGesture {
-//                            HapticManager.instance.impact()
+                            HapticManager.instance.impact()
                             selectDate = value.date
                         }
                 }
@@ -214,36 +222,48 @@ struct MyCalendarContributionView: View {
         }
     }
 
+    // MARK: Day
     @ViewBuilder
-    func CardView(value: DateValue) -> some View{
-        VStack{
+    func DayRectangle(value: DateValue) -> some View{
+        ZStack{
             if value.day != -1{
+                Rectangle()
+        //            .fill(Color(hex: colorScheme == .dark ? 0x171B21 : 0xF0F0F0))
+                    .fill(Color("GridBG"))
+                    .frame(width: DAY_SIZE, height: DAY_SIZE)
+                    .cornerRadius(2)
                 Text("\(value.day)")
-                    .font(.body)
-                    .fontWeight(Date().isSameDay(date: value.date) ? .bold : .regular)
-//                    .foregroundColor(Date().isSameDay(date: value.date) ? .theme.primary : (Date() > value.date ? .primary : .secondary))
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        // 选中效果
-                        Circle()
-                            .fill(Color.primary)
-                            .opacity(value.date.isSameDay(date: selectDate) ? 0.1 : 0)
-                            .frame(width: CHOSE_CIRCLE_SIZE, height: CHOSE_CIRCLE_SIZE)
-                    )
-
-                Spacer()
-
-                if dayDic[value.day] != nil{
-                    // 有数据
-                    Circle()
-                        .fill(dayRedDic[value.day] != nil ? Color.red :
-                                (dayGiveUpDic[value.day] != nil ? Color.gray : (dayGreenDic[value.day] != nil ? Color.green : Color.primary)))
-                        .frame(width: POINT_SIZE, height: POINT_SIZE)
-                }
+                    .font(.footnote)
             }
+//                .foregroundColor(currentMonth == monthIndex ? Color.white : Color.secondary)
         }
-        .padding(.top, 6)
-        .frame(height: 40, alignment: .top)
+//        VStack{
+//            if value.day != -1{
+//                Text("\(value.day)")
+//                    .font(.body)
+//                    .fontWeight(Date().isSameDay(date: value.date) ? .bold : .regular)
+////                    .foregroundColor(Date().isSameDay(date: value.date) ? .theme.primary : (Date() > value.date ? .primary : .secondary))
+//                    .frame(maxWidth: .infinity)
+//                    .background(
+//                        // 选中效果
+//                        Circle()
+//                            .fill(Color.primary)
+//                            .opacity(value.date.isSameDay(date: selectDate) ? 0.1 : 0)
+//                            .frame(width: CHOSE_CIRCLE_SIZE, height: CHOSE_CIRCLE_SIZE)
+//                    )
+//
+//                Spacer()
+//
+//                if dayDic[value.day] != nil{
+//                    // 有数据
+//                    Circle()
+//                        .fill(dayRedDic[value.day] != nil ? Color.red :
+//                                (dayGiveUpDic[value.day] != nil ? Color.gray : (dayGreenDic[value.day] != nil ? Color.green : Color.primary)))
+//                        .frame(width: POINT_SIZE, height: POINT_SIZE)
+//                }
+//            }
+//        }
+//        .frame(height: 40, alignment: .top)
     }
 
     func updateMonth(delta: Int){
@@ -293,25 +313,21 @@ struct MyCalendarContributionView: View {
             Rectangle()
     //            .fill(Color(hex: colorScheme == .dark ? 0x171B21 : 0xF0F0F0))
                 .fill(currentMonth == monthIndex ? Color("GithubGreen") : Color("GridBG"))
-    //            .frame(width: defaultRowSize, height: defaultRowSize)
-    //            .frame(maxWidth: .infinity)
-                .frame(width: 25, height: 25)
+                .frame(width: MONTH_SIZE, height: MONTH_SIZE)
                 .cornerRadius(2)
             Text("\(monthIndex)")
                 .font(.footnote)
                 .foregroundColor(currentMonth == monthIndex ? Color.white : Color.secondary)
         }
         .onTapGesture {
-            HapticManager.instance.impact()
-            withAnimation {
-                currentMonth = monthIndex
-            }
+            HapticManager.instance.soft()
+            currentMonth = monthIndex
         }
     }
 }
 
-struct MyCalendarContributionView_Previews: PreviewProvider {
+struct TagCalendarContributionView_Previews: PreviewProvider {
     static var previews: some View {
-        MyCalendarContributionView(selectDate: .constant(Date()))
+        TagCalendarContributionView(selectDate: .constant(Date()))
     }
 }

@@ -70,8 +70,8 @@
 		8CA4A3A1285F776500589C56 /* CalendarSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39F285F776500589C56 /* CalendarSampleView.swift */; };
 		8CA4A3A4285F77FF00589C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A3285F77FF00589C56 /* DateExtension.swift */; };
 		8CA4A3A5285F77FF00589C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A3285F77FF00589C56 /* DateExtension.swift */; };
-		8CA4A3A72860123600589C56 /* MyCalendarContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A62860123600589C56 /* MyCalendarContributionView.swift */; };
-		8CA4A3A82860123600589C56 /* MyCalendarContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A62860123600589C56 /* MyCalendarContributionView.swift */; };
+		8CA4A3A72860123600589C56 /* TagCalendarContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A62860123600589C56 /* TagCalendarContributionView.swift */; };
+		8CA4A3A82860123600589C56 /* TagCalendarContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A62860123600589C56 /* TagCalendarContributionView.swift */; };
 		8CA4A3AA2860188A00589C56 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A92860188A00589C56 /* ColorExtension.swift */; };
 		8CA4A3AB2860188A00589C56 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A92860188A00589C56 /* ColorExtension.swift */; };
 		8CA4A3AF28601BD600589C56 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3AE28601BD600589C56 /* HapticManager.swift */; };
@@ -174,7 +174,7 @@
 		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
 		8CA4A3A3285F77FF00589C56 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		8CA4A3A62860123600589C56 /* MyCalendarContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarContributionView.swift; sourceTree = "<group>"; };
+		8CA4A3A62860123600589C56 /* TagCalendarContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCalendarContributionView.swift; sourceTree = "<group>"; };
 		8CA4A3A92860188A00589C56 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		8CA4A3AE28601BD600589C56 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		8CA4A3B128606A7D00589C56 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
@@ -381,7 +381,7 @@
 		8CA4A3AC28601AC000589C56 /* Contribution */ = {
 			isa = PBXGroup;
 			children = (
-				8CA4A3A62860123600589C56 /* MyCalendarContributionView.swift */,
+				8CA4A3A62860123600589C56 /* TagCalendarContributionView.swift */,
 			);
 			path = Contribution;
 			sourceTree = "<group>";
@@ -625,7 +625,7 @@
 				8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
-				8CA4A3A72860123600589C56 /* MyCalendarContributionView.swift in Sources */,
+				8CA4A3A72860123600589C56 /* TagCalendarContributionView.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8C800B482850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */,
@@ -679,7 +679,7 @@
 				8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
-				8CA4A3A82860123600589C56 /* MyCalendarContributionView.swift in Sources */,
+				8CA4A3A82860123600589C56 /* TagCalendarContributionView.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8C800B492850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,

@@ -14,7 +14,7 @@ struct CalendarSampleView: View {
         ScrollView{
             MyCalendarView(selectDate: $selectDate)
             Divider()
-            MyCalendarContributionView(selectDate: $selectDate)
+            TagCalendarContributionView(selectDate: $selectDate)
         }
     }
 }
