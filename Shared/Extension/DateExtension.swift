@@ -1,7 +1,5 @@
 import Foundation
 
-let isChineseZH = Locale.current.languageCode != nil && Locale.current.languageCode!.contains("zh")
-
 let DAY_SEC: Int = 60 * 60 * 24
 let weekDayStrs: [String] = isChineseZH ?  ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]:
     ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]

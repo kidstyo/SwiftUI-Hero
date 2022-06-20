@@ -11,9 +11,10 @@ struct CalendarSampleView: View {
     @State private var selectDate: Date = Date()
 
     var body: some View {
-        VStack{
-            Spacer()
+        ScrollView{
             MyCalendarView(selectDate: $selectDate)
+            Divider()
+            MyCalendarContributionView(selectDate: $selectDate)
         }
     }
 }
