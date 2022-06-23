@@ -16,15 +16,14 @@ let itemFormatter: DateFormatter = {
     return dateFormatter
 }()
 
-func getNewDate(newYear: Int, newMonth: Int) -> Date{
-    let date = Date()
-    var dateComponents = Calendar.current.dateComponents([.hour, .minute, .second], from: date)
-
-    dateComponents.day = 1
-    dateComponents.month = newMonth
-    dateComponents.year = newYear
-
-    let newDate = Calendar.current.date(from: dateComponents)!
+func getNewDate(newYear: Int, newMonth: Int, newDay: Int = 1) -> Date{
+//    let date = Date()
+//    var dateComponents = Calendar.current.dateComponents([.hour, .minute, .second], from: date)
+//    dateComponents.day = 1
+//    dateComponents.month = newMonth
+//    dateComponents.year = newYear
+    let curDateCom = DateComponents(year: newYear, month: newMonth, day: 1)
+    let newDate = Calendar.current.date(from: curDateCom)!
 //    print("newDate:\(newDate) - \(newYear)/\(newMonth)")
     return newDate
 }

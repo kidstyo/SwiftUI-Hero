@@ -80,6 +80,10 @@
 		8CA4A3B328606A7D00589C56 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3B128606A7D00589C56 /* IntExtension.swift */; };
 		8CA4A3B528606A9600589C56 /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3B428606A9600589C56 /* LocaleExtension.swift */; };
 		8CA4A3B628606A9600589C56 /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3B428606A9600589C56 /* LocaleExtension.swift */; };
+		8CA4A3B828647BF200589C56 /* MonthContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3B728647BF200589C56 /* MonthContributionView.swift */; };
+		8CA4A3B928647BF200589C56 /* MonthContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3B728647BF200589C56 /* MonthContributionView.swift */; };
+		8CA4A3BB2864824900589C56 /* ContributionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BA2864824900589C56 /* ContributionUtil.swift */; };
+		8CA4A3BC2864824900589C56 /* ContributionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BA2864824900589C56 /* ContributionUtil.swift */; };
 		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
@@ -179,6 +183,8 @@
 		8CA4A3AE28601BD600589C56 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		8CA4A3B128606A7D00589C56 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		8CA4A3B428606A9600589C56 /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
+		8CA4A3B728647BF200589C56 /* MonthContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthContributionView.swift; sourceTree = "<group>"; };
+		8CA4A3BA2864824900589C56 /* ContributionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionUtil.swift; sourceTree = "<group>"; };
 		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
 		8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
@@ -382,6 +388,8 @@
 			isa = PBXGroup;
 			children = (
 				8CA4A3A62860123600589C56 /* TagCalendarContributionView.swift */,
+				8CA4A3B728647BF200589C56 /* MonthContributionView.swift */,
+				8CA4A3BA2864824900589C56 /* ContributionUtil.swift */,
 			);
 			path = Contribution;
 			sourceTree = "<group>";
@@ -630,6 +638,7 @@
 				8C800B482850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
+				8CA4A3BB2864824900589C56 /* ContributionUtil.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3AF28601BD600589C56 /* HapticManager.swift in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
@@ -652,6 +661,7 @@
 				8C800B44285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
+				8CA4A3B828647BF200589C56 /* MonthContributionView.swift in Sources */,
 				8CCA4B2F284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
 				8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */,
@@ -684,6 +694,7 @@
 				8C800B492850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,
 				8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */,
+				8CA4A3BC2864824900589C56 /* ContributionUtil.swift in Sources */,
 				8C357B0A28450C2A00918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3B028601BD600589C56 /* HapticManager.swift in Sources */,
 				8CD9E29928423F92006DB416 /* ImageView.swift in Sources */,
@@ -706,6 +717,7 @@
 				8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
+				8CA4A3B928647BF200589C56 /* MonthContributionView.swift in Sources */,
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CA4A39E285F76EC00589C56 /* MyCalendarView.swift in Sources */,

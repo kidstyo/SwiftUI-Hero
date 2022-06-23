@@ -11,13 +11,7 @@ import SwiftUI
  3x3 Tag
  */
 struct TagCalendarContributionView: View {
-    @Binding var selectDate: Date
-
-    // Month update on arrow button clicks...
-    @State private var currentYear: Int = Date().year
-    @State private var currentMonth: Int = Date().month
-    @State var newMonthDate: Date = Date()
-
+    @Binding var bindingSelectDate: Date
     @State var dayDic : [Int : Bool] = [:]
 
     // 全部完成/数据正常
@@ -30,7 +24,6 @@ struct TagCalendarContributionView: View {
     @State var dayGiveUpDic : [Int : Bool] = [:]
 
     @State var dateValueArray : [DateValue] = []
-    @State var dateStringArray : [String] = []
 //    @State var tagEntity: TagEntity? = nil
 
     // 选中的显示大小
@@ -42,7 +35,7 @@ struct TagCalendarContributionView: View {
     let DAY_SIZE: CGFloat = 26
 
     func updateCheck(){
-        print("updateCheck:\(currentYear)-\(currentMonth)")
+        print("updateCheck:\(bindingSelectDate.toStringTitle())")
         dayDic = [:]
         dayGreenDic = [:]
         dayRedDic = [:]
@@ -122,15 +115,13 @@ struct TagCalendarContributionView: View {
             // MARK: 日期和前后月选择
             HStack(spacing: 20){
                 HStack{
-                    if dateStringArray.count > 1{
-                        Text(dateStringArray[0])
-                            .font(.body.bold())
+                    Text("\(bindingSelectDate.year)")
+                        .font(.body.bold())
 
 //                        Text(dateStringArray[1])
 //                            .font(.body.bold())
-                        Text(currentMonth.toMonth())
-                            .font(.body.bold())
-                    }
+                    Text(bindingSelectDate.month.toMonth())
+                        .font(.body.bold())
                 }
 
                 Spacer(minLength: 0)
@@ -151,7 +142,7 @@ struct TagCalendarContributionView: View {
                         updateMonth(delta: 1)
                     }
             }
-            .padding(.horizontal, 13)
+            .padding(.horizontal)
 
             let monthColumns = Array(repeating: GridItem(.flexible()), count: 12)
             LazyVGrid(columns: monthColumns, spacing: 5) {
@@ -160,17 +151,18 @@ struct TagCalendarContributionView: View {
                     monthRectangle(monthIndex: monthIndex)
                 }
             }
-            .padding(.horizontal, 13)
+            .padding(.horizontal)
 
             // MARK: Week
             HStack{
                 ForEach(weekDayStrs, id: \.self){day in
                     Text(day)
-                        .font(.caption2)
+                        .font(.caption2).bold()
                         .foregroundColor(.secondary)
                         .frame(maxWidth: .infinity)
                 }
             }
+            .padding(.horizontal, 3)
 
             // Dates...
             // Lazy Grid
@@ -188,36 +180,17 @@ struct TagCalendarContributionView: View {
 //                        )
                         .onTapGesture {
                             HapticManager.instance.impact()
-                            selectDate = value.date
+                            bindingSelectDate = value.date
                         }
                 }
             }
+            .padding(.horizontal, 3)
         }
         .padding(.vertical)
         .onAppear(perform: {
-            // 初始化
-            currentYear = selectDate.year
-            currentMonth = selectDate.month
             updateCheck()
         })
-        .onChange(of: currentYear) { newValue in
-            updateCheck()
-        }
-        .onChange(of: currentMonth) { newValue in
-            updateCheck()
-        }
-//        .onChange(of: viewModel.todayState) { newValue in
-//            // 监听任务变化 TODO 优化
-//            updateCheck()
-//        }
-//        .onChange(of: viewModel.weekState) { newValue in
-//            // 监听任务变化 TODO 优化
-//            updateCheck()
-//        }
-        .onChange(of: selectDate) { newValue in
-            // 监听日期变更
-            currentYear = selectDate.year
-            currentMonth = selectDate.month
+        .onChange(of: bindingSelectDate) { newValue in
             updateCheck()
         }
     }
@@ -267,29 +240,25 @@ struct TagCalendarContributionView: View {
     }
 
     func updateMonth(delta: Int){
-        currentMonth += delta
-        if currentMonth > 12{
-            currentMonth = 1
-            currentYear += 1
+        var newMonth = bindingSelectDate.month + delta
+        var newYear = bindingSelectDate.year
+        if newMonth > 12{
+            newMonth = 1
+            newYear += 1
         }
 
-        if currentMonth < 1{
-            currentMonth = 12
-            currentYear -= 1
+        if newMonth < 1{
+            newMonth = 12
+            newYear -= 1
         }
+        updateDay(newYear: newYear, newMonth: newMonth, newDay: 1)
     }
 
     func extractDate() -> [DateValue]{
         let calendar = Calendar.current
 
         // Getting Current Month Date...
-        newMonthDate = getNewDate(newYear: currentYear, newMonth: currentMonth)
-
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy MMMM"
-
-        let date = formatter.string(from: newMonthDate)
-        dateStringArray = date.components(separatedBy: " ")
+        let newMonthDate = getNewDate(newYear: bindingSelectDate.year, newMonth: bindingSelectDate.month)
 
         var days = newMonthDate.getAllDates().compactMap { date -> DateValue in
             // getting day...
@@ -312,22 +281,32 @@ struct TagCalendarContributionView: View {
         ZStack{
             Rectangle()
     //            .fill(Color(hex: colorScheme == .dark ? 0x171B21 : 0xF0F0F0))
-                .fill(currentMonth == monthIndex ? Color("GithubGreen") : Color("GridBG"))
+                .fill(bindingSelectDate.month == monthIndex ? Color("GithubGreen") : Color("GridBG"))
                 .frame(width: MONTH_SIZE, height: MONTH_SIZE)
                 .cornerRadius(2)
             Text("\(monthIndex)")
                 .font(.footnote)
-                .foregroundColor(currentMonth == monthIndex ? Color.white : Color.secondary)
+                .foregroundColor(bindingSelectDate.month == monthIndex ? Color.white : Color.secondary)
         }
         .onTapGesture {
             HapticManager.instance.soft()
-            currentMonth = monthIndex
+            updateDay(newYear: bindingSelectDate.year, newMonth: monthIndex, newDay: 1)
         }
+    }
+
+    func updateDay(newYear: Int, newMonth: Int, newDay: Int){
+        bindingSelectDate = getNewDate(newYear: newYear, newMonth: newMonth, newDay: 1)
     }
 }
 
 struct TagCalendarContributionView_Previews: PreviewProvider {
     static var previews: some View {
-        TagCalendarContributionView(selectDate: .constant(Date()))
+        NavigationView {
+            VStack{
+                TagCalendarContributionView(bindingSelectDate: .constant(Date()))
+                Spacer()
+            }
+            .navigationTitle("Test")
+        }
     }
 }
