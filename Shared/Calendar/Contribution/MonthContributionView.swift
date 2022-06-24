@@ -13,11 +13,10 @@ struct MonthContributionView: View {
 
     // [monthIndex, Count]
     @Binding var monthCount: [Int: Int]
+    let LEVEL: Int
 
     // MARK: 常量
     let MONTH_SIZE: CGFloat = 25
-
-    let levelSpacing = 2
 
     var body: some View {
         VStack(spacing: 10){
@@ -28,21 +27,23 @@ struct MonthContributionView: View {
                         .font(.body.bold())
 
                     Text(bindingMonth.toMonth())
-                        .font(.body.bold())
+                        .font(.callout.bold())
                         .foregroundColor(Color.theme.primary)
                 }
 
                 Spacer(minLength: 0)
 
                 Image(systemName: "chevron.left")
-                    .font(.title3)
+                    .font(.callout)
+                    .foregroundColor(.secondary)
                     .onTapGesture {
                         HapticManager.instance.impact()
                         updateMonth(delta: -1)
                     }
 
                 Image(systemName: "chevron.right")
-                    .font(.title3)
+                    .font(.callout)
+                    .foregroundColor(.secondary)
                     .onTapGesture {
                         HapticManager.instance.impact()
                         updateMonth(delta: 1)
@@ -83,9 +84,7 @@ struct MonthContributionView: View {
             Rectangle()
                 .fill(Color("ContributeForeground"))
                 .frame(width: MONTH_SIZE, height: MONTH_SIZE)
-                .opacity(getOpacity(count: monthCount[monthIndex] ?? 0))
-//                .border(monthIndex == bindingMonth ? Color("ContributeSelect") : Color.secondary.opacity(0.2), width: 1)
-                .border(Color.secondary.opacity(0.2), width: 1)
+                .opacity(getOpacity(count: monthCount[monthIndex] ?? 0, levelSpacing: LEVEL))
                 .cornerRadius(2)
 
             Text("\(monthIndex)")
@@ -97,28 +96,11 @@ struct MonthContributionView: View {
             bindingMonth = monthIndex
         }
     }
-
-    /// Returns the opacity value based on the level.
-    /// - Parameter count: The number contributed to the current date.
-    /// - Returns: Transparency value.
-    private func getOpacity(count: Int) -> CGFloat {
-        if count == 0 {
-            return ACLevel.zero.opacity
-        }else if ACLevel.first.rawValue * levelSpacing >= count {
-            return ACLevel.first.opacity
-        }else if ACLevel.second.rawValue * levelSpacing >= count {
-            return ACLevel.second.opacity
-        }else if ACLevel.third.rawValue * levelSpacing >= count {
-            return ACLevel.third.opacity
-        }else if ACLevel.fourth.rawValue * levelSpacing >= count {
-            return ACLevel.fourth.opacity
-        }
-        return 1.0
-    }
 }
 
 struct MonthContributionView_Previews: PreviewProvider {
     static var previews: some View {
-        MonthContributionView(bindingYear: .constant(Date().year), bindingMonth: .constant(Date().month), monthCount: .constant([:]))
+        MonthContributionView(bindingYear: .constant(Date().year), bindingMonth: .constant(Date().month), monthCount: .constant([:]), LEVEL: 2)
+            .padding(.horizontal)
     }
 }

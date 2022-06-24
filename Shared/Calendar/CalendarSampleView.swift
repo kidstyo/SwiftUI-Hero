@@ -12,11 +12,14 @@ struct CalendarSampleView: View {
     @State private var year: Int = Date().year
     @State private var month: Int = Date().month
     @State private var monthCount: [Int: Int] = [:]
+    @State private var dayCount: [Int: Int] = [:]
 
     var body: some View {
         ScrollView{
             MonthContributionView(bindingYear: $year, bindingMonth: $month, monthCount: $monthCount)
                 .padding(.horizontal)
+            Divider()
+            ScheduleContributionView(bindingSelectDate: $selectDate, bindingDayCount: $dayCount)
             Divider()
             TagCalendarContributionView(bindingSelectDate: $selectDate)
             Divider()
@@ -33,6 +36,17 @@ struct CalendarSampleView: View {
             monthCount[8] = 8
             monthCount[9] = 9
             monthCount[10] = 10
+
+            dayCount[1] = 1
+            dayCount[2] = 2
+            dayCount[3] = 3
+            dayCount[4] = 4
+            dayCount[5] = 5
+            dayCount[6] = 6
+            dayCount[7] = 7
+            dayCount[8] = 8
+            dayCount[9] = 9
+            dayCount[10] = 10
         }
     }
 }

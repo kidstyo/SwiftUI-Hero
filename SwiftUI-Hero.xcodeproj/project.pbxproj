@@ -84,6 +84,8 @@
 		8CA4A3B928647BF200589C56 /* MonthContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3B728647BF200589C56 /* MonthContributionView.swift */; };
 		8CA4A3BB2864824900589C56 /* ContributionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BA2864824900589C56 /* ContributionUtil.swift */; };
 		8CA4A3BC2864824900589C56 /* ContributionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BA2864824900589C56 /* ContributionUtil.swift */; };
+		8CA4A3BE2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */; };
+		8CA4A3BF2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */; };
 		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
@@ -185,6 +187,7 @@
 		8CA4A3B428606A9600589C56 /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		8CA4A3B728647BF200589C56 /* MonthContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthContributionView.swift; sourceTree = "<group>"; };
 		8CA4A3BA2864824900589C56 /* ContributionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionUtil.swift; sourceTree = "<group>"; };
+		8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleContributionView.swift; sourceTree = "<group>"; };
 		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
 		8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
@@ -390,6 +393,7 @@
 				8CA4A3A62860123600589C56 /* TagCalendarContributionView.swift */,
 				8CA4A3B728647BF200589C56 /* MonthContributionView.swift */,
 				8CA4A3BA2864824900589C56 /* ContributionUtil.swift */,
+				8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */,
 			);
 			path = Contribution;
 			sourceTree = "<group>";
@@ -642,6 +646,7 @@
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3AF28601BD600589C56 /* HapticManager.swift in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
+				8CA4A3BE2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */,
 				8C800B3B284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
@@ -698,6 +703,7 @@
 				8C357B0A28450C2A00918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3B028601BD600589C56 /* HapticManager.swift in Sources */,
 				8CD9E29928423F92006DB416 /* ImageView.swift in Sources */,
+				8CA4A3BF2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */,
 				8C800B3C284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,

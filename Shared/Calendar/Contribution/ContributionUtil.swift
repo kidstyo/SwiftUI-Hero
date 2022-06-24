@@ -22,3 +22,21 @@ enum ACLevel: Int, CaseIterable {
         }
     }
 }
+
+/// Returns the opacity value based on the level.
+/// - Parameter count: The number contributed to the current date.
+/// - Returns: Transparency value.
+func getOpacity(count: Int, levelSpacing: Int) -> CGFloat {
+    if count == 0 {
+        return ACLevel.zero.opacity
+    }else if ACLevel.first.rawValue * levelSpacing >= count {
+        return ACLevel.first.opacity
+    }else if ACLevel.second.rawValue * levelSpacing >= count {
+        return ACLevel.second.opacity
+    }else if ACLevel.third.rawValue * levelSpacing >= count {
+        return ACLevel.third.opacity
+    }else if ACLevel.fourth.rawValue * levelSpacing >= count {
+        return ACLevel.fourth.opacity
+    }
+    return 1.0
+}
