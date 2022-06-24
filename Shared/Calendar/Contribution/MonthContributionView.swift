@@ -92,7 +92,15 @@ struct MonthContributionView: View {
                 .foregroundColor((monthCount[monthIndex] ?? 0)  > 0 ? .white : .secondary)
         }
         .onTapGesture {
-            HapticManager.instance.soft()
+            // MARK: 日期点击
+            if (monthCount[monthIndex] ?? 0) > 0
+            {
+                HapticManager.instance.impact()
+            }
+            else{
+                HapticManager.instance.soft()
+            }
+
             bindingMonth = monthIndex
         }
     }

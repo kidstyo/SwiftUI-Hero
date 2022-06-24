@@ -16,10 +16,10 @@ struct CalendarSampleView: View {
 
     var body: some View {
         ScrollView{
-            MonthContributionView(bindingYear: $year, bindingMonth: $month, monthCount: $monthCount)
+            MonthContributionView(bindingYear: $year, bindingMonth: $month, monthCount: $monthCount, LEVEL: 2)
                 .padding(.horizontal)
             Divider()
-            ScheduleContributionView(bindingSelectDate: $selectDate, bindingDayCount: $dayCount)
+            ScheduleContributionView(bindingSelectDate: $selectDate, clickDay: .constant(true), bindingDayCount: $dayCount, LEVEL: 1)
             Divider()
             TagCalendarContributionView(bindingSelectDate: $selectDate)
             Divider()

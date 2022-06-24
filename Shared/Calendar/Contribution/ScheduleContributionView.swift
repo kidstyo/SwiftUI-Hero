@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScheduleContributionView: View {
     @Binding var bindingSelectDate: Date
+    @Binding var clickDay: Bool
 
     // [day, count]
     @Binding var bindingDayCount: [Int: Int]
@@ -75,8 +76,17 @@ struct ScheduleContributionView: View {
                 ForEach(dateValueArray){value in
                     DayRectangle(value: value)
                         .onTapGesture {
-                            HapticManager.instance.impact()
+                            // MARK: 日期点击
+                            if (bindingDayCount[value.day] ?? 0) > 0
+                            {
+                                HapticManager.instance.impact()
+                            }
+                            else{
+                                HapticManager.instance.soft()
+                            }
+
                             bindingSelectDate = value.date
+                            clickDay.toggle()
                         }
                 }
             }
@@ -158,7 +168,7 @@ struct ScheduleContributionView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             VStack{
-                ScheduleContributionView(bindingSelectDate: .constant(Date()), bindingDayCount: .constant([:]), LEVEL: 1)
+                ScheduleContributionView(bindingSelectDate: .constant(Date()), clickDay: .constant(true), bindingDayCount: .constant([:]), LEVEL: 1)
                 Spacer()
             }
             .navigationTitle("Test")
