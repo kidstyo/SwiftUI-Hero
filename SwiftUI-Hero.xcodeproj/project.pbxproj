@@ -86,6 +86,10 @@
 		8CA4A3BC2864824900589C56 /* ContributionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BA2864824900589C56 /* ContributionUtil.swift */; };
 		8CA4A3BE2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */; };
 		8CA4A3BF2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */; };
+		8CA4A3C228684FDF00589C56 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C128684FDF00589C56 /* TextExtension.swift */; };
+		8CA4A3C328684FDF00589C56 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C128684FDF00589C56 /* TextExtension.swift */; };
+		8CA4A3C62868508700589C56 /* TextStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C52868508700589C56 /* TextStyleView.swift */; };
+		8CA4A3C72868508700589C56 /* TextStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C52868508700589C56 /* TextStyleView.swift */; };
 		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
@@ -188,6 +192,8 @@
 		8CA4A3B728647BF200589C56 /* MonthContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthContributionView.swift; sourceTree = "<group>"; };
 		8CA4A3BA2864824900589C56 /* ContributionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionUtil.swift; sourceTree = "<group>"; };
 		8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleContributionView.swift; sourceTree = "<group>"; };
+		8CA4A3C128684FDF00589C56 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		8CA4A3C52868508700589C56 /* TextStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleView.swift; sourceTree = "<group>"; };
 		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
 		8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
@@ -315,6 +321,7 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8CA4A3C42868507300589C56 /* Style */,
 				8CA4A3AD28601BD000589C56 /* Haptic */,
 				8CA4A3A2285F77F300589C56 /* Extension */,
 				8CA4A39B285F76D900589C56 /* Calendar */,
@@ -379,6 +386,7 @@
 		8CA4A3A2285F77F300589C56 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8CA4A3C128684FDF00589C56 /* TextExtension.swift */,
 				8CA4A3A3285F77FF00589C56 /* DateExtension.swift */,
 				8CA4A3A92860188A00589C56 /* ColorExtension.swift */,
 				8CA4A3B128606A7D00589C56 /* IntExtension.swift */,
@@ -404,6 +412,14 @@
 				8CA4A3AE28601BD600589C56 /* HapticManager.swift */,
 			);
 			path = Haptic;
+			sourceTree = "<group>";
+		};
+		8CA4A3C42868507300589C56 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				8CA4A3C52868508700589C56 /* TextStyleView.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 		8CA5984C28520755002E8264 /* Typography */ = {
@@ -638,6 +654,7 @@
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8CA4A3A72860123600589C56 /* TagCalendarContributionView.swift in Sources */,
+				8CA4A3C228684FDF00589C56 /* TextExtension.swift in Sources */,
 				8C6D79F02841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8C800B482850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */,
@@ -651,6 +668,7 @@
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
+				8CA4A3C62868508700589C56 /* TextStyleView.swift in Sources */,
 				8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */,
 				8CA4A3A0285F776500589C56 /* CalendarSampleView.swift in Sources */,
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
@@ -695,6 +713,7 @@
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
 				8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8CA4A3A82860123600589C56 /* TagCalendarContributionView.swift in Sources */,
+				8CA4A3C328684FDF00589C56 /* TextExtension.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8C800B492850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,
@@ -708,6 +727,7 @@
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
+				8CA4A3C72868508700589C56 /* TextStyleView.swift in Sources */,
 				8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */,
 				8CA4A3A1285F776500589C56 /* CalendarSampleView.swift in Sources */,
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,

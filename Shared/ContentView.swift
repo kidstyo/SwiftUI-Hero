@@ -11,12 +11,23 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
+                // MARK: Style
+                Section {
+                    NavigationLink("Text Style") {
+                        TextStyleView()
+                            .navigationTitle(Text("Text Style"))
+                    }
+                } header: {
+                    Text("Style")
+                }
+
                 // MARK: Sample
                 Section {
                     NavigationLink("3x3") {
                         Today3x3View()
                             .navigationTitle(Text("3x3"))
                     }
+
                     NavigationLink("Media Picker") {
                         MediaPickerView()
                             .navigationTitle(Text("Media Picker"))
@@ -133,34 +144,36 @@ struct ContentView: View {
                     Text("iCloud")
                 }
 
-                // MARK: LazyStack
-                Section {
-                    NavigationLink("LazyHStack") {
-                        LazyHStackView()
-                            .navigationTitle(Text("LazyHStack"))
+                Group{
+                    // MARK: LazyStack
+                    Section {
+                        NavigationLink("LazyHStack") {
+                            LazyHStackView()
+                                .navigationTitle(Text("LazyHStack"))
+                        }
+
+                        NavigationLink("LazyVStack") {
+                            LazyVStackView()
+                                .navigationTitle(Text("LazyVStack"))
+                        }
+                    } header: {
+                        Text("LazyStack")
                     }
 
-                    NavigationLink("LazyVStack") {
-                        LazyVStackView()
-                            .navigationTitle(Text("LazyVStack"))
-                    }
-                } header: {
-                    Text("LazyStack")
-                }
+                    // MARK: LazyGrid
+                    Section {
+                        NavigationLink("LazyVGrid") {
+                            LazyVGridView()
+                                .navigationTitle(Text("LazyVGrid"))
+                        }
 
-                // MARK: LazyGrid
-                Section {
-                    NavigationLink("LazyVGrid") {
-                        LazyVGridView()
-                            .navigationTitle(Text("LazyVGrid"))
+                        NavigationLink("LazyHGrid") {
+                            LazyHGridView()
+                                .navigationTitle(Text("LazyHGrid"))
+                        }
+                    } header: {
+                        Text("LazyGrid")
                     }
-
-                    NavigationLink("LazyHGrid") {
-                        LazyHGridView()
-                            .navigationTitle(Text("LazyHGrid"))
-                    }
-                } header: {
-                    Text("LazyGrid")
                 }
 
                 // MARK: Sheet
