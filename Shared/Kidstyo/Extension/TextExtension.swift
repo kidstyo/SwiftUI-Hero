@@ -3,7 +3,7 @@
 //  SwiftUI-Hero
 //
 //  Created by kidstyo on 2022/6/26.
-//  Version: 20220626
+//  📝Version: 20220626
 //
 
 import SwiftUI

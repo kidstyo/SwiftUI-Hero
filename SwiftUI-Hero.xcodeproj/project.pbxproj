@@ -321,9 +321,8 @@
 		8C8182692840D33B0089735A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8CA4A3C82868569200589C56 /* Kidstyo */,
 				8CA4A3C42868507300589C56 /* Style */,
-				8CA4A3AD28601BD000589C56 /* Haptic */,
-				8CA4A3A2285F77F300589C56 /* Extension */,
 				8CA4A39B285F76D900589C56 /* Calendar */,
 				8C08C361285452C70080CD3C /* Sheet */,
 				8CA5984C28520755002E8264 /* Typography */,
@@ -420,6 +419,15 @@
 				8CA4A3C52868508700589C56 /* TextStyleView.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		8CA4A3C82868569200589C56 /* Kidstyo */ = {
+			isa = PBXGroup;
+			children = (
+				8CA4A3A2285F77F300589C56 /* Extension */,
+				8CA4A3AD28601BD000589C56 /* Haptic */,
+			);
+			path = Kidstyo;
 			sourceTree = "<group>";
 		};
 		8CA5984C28520755002E8264 /* Typography */ = {
