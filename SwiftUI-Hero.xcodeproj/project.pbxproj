@@ -90,6 +90,8 @@
 		8CA4A3C328684FDF00589C56 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C128684FDF00589C56 /* TextExtension.swift */; };
 		8CA4A3C62868508700589C56 /* TextStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C52868508700589C56 /* TextStyleView.swift */; };
 		8CA4A3C72868508700589C56 /* TextStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3C52868508700589C56 /* TextStyleView.swift */; };
+		8CA4A3CB2868811900589C56 /* UrlWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3CA2868811900589C56 /* UrlWebView.swift */; };
+		8CA4A3CC2868811900589C56 /* UrlWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3CA2868811900589C56 /* UrlWebView.swift */; };
 		8CA5984E2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA5984D2852076A002E8264 /* CustomFontView.swift */; };
 		8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */; };
@@ -194,6 +196,7 @@
 		8CA4A3BD2864A1DD00589C56 /* ScheduleContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleContributionView.swift; sourceTree = "<group>"; };
 		8CA4A3C128684FDF00589C56 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
 		8CA4A3C52868508700589C56 /* TextStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleView.swift; sourceTree = "<group>"; };
+		8CA4A3CA2868811900589C56 /* UrlWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlWebView.swift; sourceTree = "<group>"; };
 		8CA5984D2852076A002E8264 /* CustomFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontView.swift; sourceTree = "<group>"; };
 		8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
@@ -424,10 +427,19 @@
 		8CA4A3C82868569200589C56 /* Kidstyo */ = {
 			isa = PBXGroup;
 			children = (
+				8CA4A3C92868810D00589C56 /* View */,
 				8CA4A3A2285F77F300589C56 /* Extension */,
 				8CA4A3AD28601BD000589C56 /* Haptic */,
 			);
 			path = Kidstyo;
+			sourceTree = "<group>";
+		};
+		8CA4A3C92868810D00589C56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CA4A3CA2868811900589C56 /* UrlWebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8CA5984C28520755002E8264 /* Typography */ = {
@@ -689,6 +701,7 @@
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CA4A3AA2860188A00589C56 /* ColorExtension.swift in Sources */,
 				8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */,
+				8CA4A3CB2868811900589C56 /* UrlWebView.swift in Sources */,
 				8C800B44285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C81827F2840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
@@ -748,6 +761,7 @@
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CA4A3AB2860188A00589C56 /* ColorExtension.swift in Sources */,
 				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
+				8CA4A3CC2868811900589C56 /* UrlWebView.swift in Sources */,
 				8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
