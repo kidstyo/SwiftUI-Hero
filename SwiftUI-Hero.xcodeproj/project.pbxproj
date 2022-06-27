@@ -102,6 +102,8 @@
 		8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B2E284E471B00C33560 /* ImagePicker.swift */; };
 		8CCA4B32284E4E1000C33560 /* LivePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */; };
 		8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */; };
+		8CCCED912869F35200C65896 /* CalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCED902869F35200C65896 /* CalendarExtension.swift */; };
+		8CCCED922869F35200C65896 /* CalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCED902869F35200C65896 /* CalendarExtension.swift */; };
 		8CD9E29828423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
 		8CD9E29928423F92006DB416 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29728423F92006DB416 /* ImageView.swift */; };
 		8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E29A28424DA3006DB416 /* MaskView.swift */; };
@@ -202,6 +204,7 @@
 		8CCA4B2A284E44CC00C33560 /* LivePhotoSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoSampleView.swift; sourceTree = "<group>"; };
 		8CCA4B2E284E471B00C33560 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8CCA4B31284E4E1000C33560 /* LivePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoView.swift; sourceTree = "<group>"; };
+		8CCCED902869F35200C65896 /* CalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExtension.swift; sourceTree = "<group>"; };
 		8CD9E29728423F92006DB416 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8CD9E29A28424DA3006DB416 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		8CD9E29D28424EBB006DB416 /* ScaleRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRotationView.swift; sourceTree = "<group>"; };
@@ -393,6 +396,7 @@
 				8CA4A3A92860188A00589C56 /* ColorExtension.swift */,
 				8CA4A3B128606A7D00589C56 /* IntExtension.swift */,
 				8CA4A3B428606A9600589C56 /* LocaleExtension.swift */,
+				8CCCED902869F35200C65896 /* CalendarExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -672,6 +676,7 @@
 				8C800B4C2850D62200CB7FFF /* CanvasViewModel.swift in Sources */,
 				8CCA4B2B284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF782E2848F0B800F1EACE /* GetPeopleIntentHandler.swift in Sources */,
+				8CCCED912869F35200C65896 /* CalendarExtension.swift in Sources */,
 				8C800B3E284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8CA4A3A72860123600589C56 /* TagCalendarContributionView.swift in Sources */,
 				8CA4A3C228684FDF00589C56 /* TextExtension.swift in Sources */,
@@ -732,6 +737,7 @@
 				8C800B4D2850D62200CB7FFF /* CanvasViewModel.swift in Sources */,
 				8CCA4B2C284E44CC00C33560 /* LivePhotoSampleView.swift in Sources */,
 				8CFF78302848F11200F1EACE /* GetPeopleIntentHandler.swift in Sources */,
+				8CCCED922869F35200C65896 /* CalendarExtension.swift in Sources */,
 				8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8CA4A3A82860123600589C56 /* TagCalendarContributionView.swift in Sources */,
 				8CA4A3C328684FDF00589C56 /* TextExtension.swift in Sources */,

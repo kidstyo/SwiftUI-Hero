@@ -1,3 +1,11 @@
+//
+//  Calendar.swift
+//  Today_3x3
+//
+//  Created by kidstyo on 2022/2/8.
+//  📝Version: 1⃣️
+//
+
 import Foundation
 
 let DAY_SEC: Int = 60 * 60 * 24
@@ -202,9 +210,9 @@ extension Date {
         })
     }
 
-//    func isSameWeek(date: Date) -> Bool {
-//        Calendar.current.startOfWeek(for: date) == Calendar.current.startOfWeek(for: self)
-//    }
+    func isSameWeek(date: Date) -> Bool {
+        Calendar.current.startOfWeek(for: date) == Calendar.current.startOfWeek(for: self)
+    }
 
     func getWeekDateName() -> String{
         let calendar = Calendar.current
