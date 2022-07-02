@@ -32,6 +32,9 @@ struct SwiftUI_HeroApp: App {
                         personToShow = person
                     }
                 }
+                .task {
+                    AppearanceController.shared.setAppearance()
+                }
         }
     }
 

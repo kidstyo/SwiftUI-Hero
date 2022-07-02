@@ -11,43 +11,59 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                // MARK: Style
-                Section {
-                    NavigationLink("Text Style") {
-                        TextStyleView()
-                            .navigationTitle(Text("Text Style"))
-                    }
-                } header: {
-                    Text("Style")
+                NavigationLink("Setting") {
+                    SettingView()
+                        .navigationTitle(Text("Setting"))
                 }
 
-                // MARK: Sample
-                Section {
-                    NavigationLink("3x3") {
-                        Today3x3View()
-                            .navigationTitle(Text("3x3"))
-                    }
-
-                    NavigationLink("Media Picker") {
-                        MediaPickerView()
-                            .navigationTitle(Text("Media Picker"))
-                    }
-
-                    NavigationLink("DisclosureGroup") {
-                        DisclosureGroupView()
-                            .navigationTitle(Text("DisclosureGroup"))
-                    }
-
+                Group{
+                    // MARK: Style
                     Section {
-                        NavigationLink("Shortcut") {
-                            ShortcutView()
-                                .navigationTitle(Text("Shortcut"))
+                        NavigationLink("Text Style") {
+                            TextStyleView()
+                                .navigationTitle(Text("Text Style"))
                         }
                     } header: {
-                        Text("Shortcut")
+                        Text("Style")
+                    }
+
+                    // MARK: Sample
+                    Section {
+                        NavigationLink("3x3") {
+                            Today3x3View()
+                                .navigationTitle(Text("3x3"))
+                        }
+
+                        NavigationLink("Media Picker") {
+                            MediaPickerView()
+                                .navigationTitle(Text("Media Picker"))
+                        }
+
+                        NavigationLink("DisclosureGroup") {
+                            DisclosureGroupView()
+                                .navigationTitle(Text("DisclosureGroup"))
+                        }
+
+                        Section {
+                            NavigationLink("Shortcut") {
+                                ShortcutView()
+                                    .navigationTitle(Text("Shortcut"))
+                            }
+                        } header: {
+                            Text("Shortcut")
+                        }
+                    } header: {
+                        Text("Sample")
+                    }
+                }
+
+                Section {
+                    NavigationLink("TabView") {
+                        TabView1()
+                            .navigationTitle(Text("TabView"))
                     }
                 } header: {
-                    Text("Sample")
+                    Text("TabView")
                 }
 
                 Section {
@@ -96,43 +112,56 @@ struct ContentView: View {
                     }
                 }
 
-                // MARK: Image
-                Section {
-                    NavigationLink("Image") {
-                        ImageView()
-                            .navigationTitle(Text("Image"))
+                Group{
+                    // MARK: Image
+                    Section {
+                        NavigationLink("Image") {
+                            ImageView()
+                                .navigationTitle(Text("Image"))
+                        }
+
+                        NavigationLink("Mask") {
+                            MaskView()
+                                .navigationTitle(Text("Mask"))
+                        }
+
+                        NavigationLink("Scale and Rotation") {
+                            ScaleRotationView()
+                                .navigationTitle(Text("Scale and Rotation"))
+                        }
+
+                        NavigationLink("Image Download") {
+                            ImageDownloadView()
+                                .navigationTitle(Text("Image Download"))
+                        }
+                    } header: {
+                        Text("Image")
                     }
 
-                    NavigationLink("Mask") {
-                        MaskView()
-                            .navigationTitle(Text("Mask"))
-                    }
+                    Section {
+                        NavigationLink("PHPicker") {
+                            PHPickerView()
+                                .navigationTitle(Text("PHPicker"))
+                        }
 
-                    NavigationLink("Scale and Rotation") {
-                        ScaleRotationView()
-                            .navigationTitle(Text("Scale and Rotation"))
+                        NavigationLink("LivePhoto") {
+                            LivePhotoSampleView()
+                                .navigationTitle(Text("LivePhoto"))
+                        }
+                    } header: {
+                        Text("Photo")
                     }
-
-                    NavigationLink("Image Download") {
-                        ImageDownloadView()
-                            .navigationTitle(Text("Image Download"))
-                    }
-                } header: {
-                    Text("Image")
                 }
 
-                Section {
-                    NavigationLink("PHPicker") {
-                        PHPickerView()
-                            .navigationTitle(Text("PHPicker"))
-                    }
 
-                    NavigationLink("LivePhoto") {
-                        LivePhotoSampleView()
-                            .navigationTitle(Text("LivePhoto"))
+                // MARK: Sheet
+                Section {
+                    NavigationLink("BottomSheet") {
+                        BottomSheetView()
+                            .navigationTitle(Text("BottomSheet"))
                     }
                 } header: {
-                    Text("Photo")
+                    Text("Sheet")
                 }
 
                 Section {
@@ -174,16 +203,6 @@ struct ContentView: View {
                     } header: {
                         Text("LazyGrid")
                     }
-                }
-
-                // MARK: Sheet
-                Section {
-                    NavigationLink("BottomSheet") {
-                        BottomSheetView()
-                            .navigationTitle(Text("BottomSheet"))
-                    }
-                } header: {
-                    Text("Sheet")
                 }
             }
         }
