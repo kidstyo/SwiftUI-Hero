@@ -70,6 +70,18 @@
 		8C96E2A828706B6000758443 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A628706B6000758443 /* SettingView.swift */; };
 		8C96E2AA287178D200758443 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A9287178D200758443 /* ThemeView.swift */; };
 		8C96E2AB287178D200758443 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A9287178D200758443 /* ThemeView.swift */; };
+		8C96E2CA28718FEE00758443 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96E2C928718FEE00758443 /* WidgetKit.framework */; };
+		8C96E2CC28718FEE00758443 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96E2CB28718FEE00758443 /* SwiftUI.framework */; };
+		8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2CE28718FEE00758443 /* JustWidgets.swift */; };
+		8C96E2D228718FEF00758443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C96E2D128718FEF00758443 /* Assets.xcassets */; };
+		8C96E2D428718FEF00758443 /* JustWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2D028718FEE00758443 /* JustWidgets.intentdefinition */; };
+		8C96E2D528718FEF00758443 /* JustWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2D028718FEE00758443 /* JustWidgets.intentdefinition */; };
+		8C96E2D828718FEF00758443 /* JustWidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C96E2C828718FEE00758443 /* JustWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C96E2DC2871C18C00758443 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCEDAB286DF3C300C65896 /* Theme.swift */; };
+		8C96E2DD2871C1E700758443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
+		8C96E2E02871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
+		8C96E2E12871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
+		8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
@@ -145,6 +157,13 @@
 			remoteGlobalIDString = 8C357AF828450BB800918DB9;
 			remoteInfo = Shortcuts;
 		};
+		8C96E2D628718FEF00758443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C8182652840D33A0089735A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C96E2C728718FEE00758443;
+			remoteInfo = JustWidgetsExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -154,6 +173,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				8C96E2D828718FEF00758443 /* JustWidgetsExtension.appex in Embed App Extensions */,
 				8C357B0228450BB800918DB9 /* Shortcuts.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -200,6 +220,15 @@
 		8C96E2A228706AA400758443 /* MyDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDarkMode.swift; sourceTree = "<group>"; };
 		8C96E2A628706B6000758443 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8C96E2A9287178D200758443 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		8C96E2C828718FEE00758443 /* JustWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JustWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C96E2C928718FEE00758443 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8C96E2CB28718FEE00758443 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8C96E2CE28718FEE00758443 /* JustWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustWidgets.swift; sourceTree = "<group>"; };
+		8C96E2D028718FEE00758443 /* JustWidgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = JustWidgets.intentdefinition; sourceTree = "<group>"; };
+		8C96E2D128718FEF00758443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C96E2D328718FEF00758443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C96E2DF2871C28D00758443 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		8C96E2E32871C3CC00758443 /* JustWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustWidgetsExtension.entitlements; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
 		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
@@ -258,6 +287,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C96E2C528718FEE00758443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C96E2CC28718FEE00758443 /* SwiftUI.framework in Frameworks */,
+				8C96E2CA28718FEE00758443 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +369,14 @@
 		8C8182642840D33A0089735A = {
 			isa = PBXGroup;
 			children = (
+				8C96E2E32871C3CC00758443 /* JustWidgetsExtension.entitlements */,
 				8C357B0B28450C3100918DB9 /* SwiftUI-Hero--macOS--Info.plist */,
 				8CD9E2A4284260CC006DB416 /* SwiftUI-Hero (iOS).entitlements */,
 				8CD9E2A3284253E0006DB416 /* SwiftUI-Hero--iOS--Info.plist */,
 				8C8182692840D33B0089735A /* Shared */,
 				8C81827B2840D33B0089735A /* macOS */,
 				8C357AFC28450BB800918DB9 /* Shortcuts */,
+				8C96E2CD28718FEE00758443 /* JustWidgets */,
 				8C8182752840D33B0089735A /* Products */,
 				8CD9E2A528426114006DB416 /* Frameworks */,
 			);
@@ -377,6 +417,7 @@
 				8C8182742840D33B0089735A /* SwiftUI-Hero.app */,
 				8C81827A2840D33B0089735A /* SwiftUI-Hero.app */,
 				8C357AF928450BB800918DB9 /* Shortcuts.appex */,
+				8C96E2C828718FEE00758443 /* JustWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,6 +444,25 @@
 				8C96E2A628706B6000758443 /* SettingView.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		8C96E2CD28718FEE00758443 /* JustWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				8C96E2CE28718FEE00758443 /* JustWidgets.swift */,
+				8C96E2D028718FEE00758443 /* JustWidgets.intentdefinition */,
+				8C96E2D128718FEF00758443 /* Assets.xcassets */,
+				8C96E2D328718FEF00758443 /* Info.plist */,
+			);
+			path = JustWidgets;
+			sourceTree = "<group>";
+		};
+		8C96E2DE2871C25C00758443 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8C96E2DF2871C28D00758443 /* AppSetting.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		8CA44EDB284BBA8A00A16E1A /* Sample */ = {
@@ -467,6 +527,7 @@
 		8CA4A3C82868569200589C56 /* Kidstyo */ = {
 			isa = PBXGroup;
 			children = (
+				8C96E2DE2871C25C00758443 /* Config */,
 				8C96E29D28705E3600758443 /* Model */,
 				8CCCEDAA286DF3B200C65896 /* Theme */,
 				8CA4A3C92868810D00589C56 /* View */,
@@ -535,6 +596,8 @@
 			children = (
 				8CD9E2A628426114006DB416 /* CloudKit.framework */,
 				8C357AFA28450BB800918DB9 /* Intents.framework */,
+				8C96E2C928718FEE00758443 /* WidgetKit.framework */,
+				8C96E2CB28718FEE00758443 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -616,6 +679,7 @@
 			);
 			dependencies = (
 				8C357B0128450BB800918DB9 /* PBXTargetDependency */,
+				8C96E2D728718FEF00758443 /* PBXTargetDependency */,
 			);
 			name = "SwiftUI-Hero (iOS)";
 			productName = "SwiftUI-Hero (iOS)";
@@ -639,6 +703,23 @@
 			productReference = 8C81827A2840D33B0089735A /* SwiftUI-Hero.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8C96E2C728718FEE00758443 /* JustWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C96E2DB28718FEF00758443 /* Build configuration list for PBXNativeTarget "JustWidgetsExtension" */;
+			buildPhases = (
+				8C96E2C428718FEE00758443 /* Sources */,
+				8C96E2C528718FEE00758443 /* Frameworks */,
+				8C96E2C628718FEE00758443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustWidgetsExtension;
+			productName = JustWidgetsExtension;
+			productReference = 8C96E2C828718FEE00758443 /* JustWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -646,7 +727,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					8C357AF828450BB800918DB9 = {
@@ -657,6 +738,9 @@
 					};
 					8C8182792840D33B0089735A = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					8C96E2C728718FEE00758443 = {
+						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
@@ -676,6 +760,7 @@
 				8C8182732840D33B0089735A /* SwiftUI-Hero (iOS) */,
 				8C8182792840D33B0089735A /* SwiftUI-Hero (macOS) */,
 				8C357AF828450BB800918DB9 /* Shortcuts */,
+				8C96E2C728718FEE00758443 /* JustWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -701,6 +786,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8182862840D33B0089735A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C96E2C628718FEE00758443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C96E2DD2871C1E700758443 /* Assets.xcassets in Resources */,
+				8C96E2D228718FEF00758443 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +873,8 @@
 				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
+				8C96E2E02871C28D00758443 /* AppSetting.swift in Sources */,
+				8C96E2D528718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
 				8C96E2A328706AA400758443 /* MyDarkMode.swift in Sources */,
 				8CAFBA2B285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */,
 			);
@@ -794,6 +890,7 @@
 				8C81827E2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024D2840E46300ECEB99 /* ContentView.swift in Sources */,
 				8CA4A3B628606A9600589C56 /* LocaleExtension.swift in Sources */,
+				8C96E2E12871C28D00758443 /* AppSetting.swift in Sources */,
 				8C800B38284F7AF500CB7FFF /* LazyHGridView.swift in Sources */,
 				8C6D79F728420CAE003EEF78 /* ButtonView.swift in Sources */,
 				8C800B4D2850D62200CB7FFF /* CanvasViewModel.swift in Sources */,
@@ -851,6 +948,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C96E2C428718FEE00758443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C96E2DC2871C18C00758443 /* Theme.swift in Sources */,
+				8C96E2D428718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
+				8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */,
+				8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -858,6 +966,11 @@
 			isa = PBXTargetDependency;
 			target = 8C357AF828450BB800918DB9 /* Shortcuts */;
 			targetProxy = 8C357B0028450BB800918DB9 /* PBXContainerItemProxy */;
+		};
+		8C96E2D728718FEF00758443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C96E2C728718FEE00758443 /* JustWidgetsExtension */;
+			targetProxy = 8C96E2D628718FEF00758443 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1157,6 +1270,67 @@
 			};
 			name = Release;
 		};
+		8C96E2D928718FEF00758443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JustWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8774ZX9976;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JustWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JustWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kidstyo.SwiftUI-Hero.JustWidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C96E2DA28718FEF00758443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JustWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8774ZX9976;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JustWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JustWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kidstyo.SwiftUI-Hero.JustWidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1192,6 +1366,15 @@
 			buildConfigurations = (
 				8C81828D2840D33B0089735A /* Debug */,
 				8C81828E2840D33B0089735A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C96E2DB28718FEF00758443 /* Build configuration list for PBXNativeTarget "JustWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C96E2D928718FEF00758443 /* Debug */,
+				8C96E2DA28718FEF00758443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

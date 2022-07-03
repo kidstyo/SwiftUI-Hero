@@ -7,9 +7,10 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ThemeView: View {
-    @AppStorage(THEME_KEY) var appTheme: Theme = .classic
+    @AppStorage(THEME_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
 
     let columns = [
         GridItem(.adaptive(minimum: 80))
@@ -40,6 +41,9 @@ struct ThemeView: View {
             .padding(.vertical)
         }
         .navigationTitle("Theme")
+        .onChange(of: appTheme) { newValue in
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
 }
 
