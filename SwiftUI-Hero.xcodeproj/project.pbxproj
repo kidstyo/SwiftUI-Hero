@@ -82,6 +82,7 @@
 		8C96E2E02871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
 		8C96E2E12871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
 		8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
+		8C96E2E42871DE9F00758443 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A92860188A00589C56 /* ColorExtension.swift */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
@@ -956,6 +957,7 @@
 				8C96E2D428718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
 				8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */,
 				8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */,
+				8C96E2E42871DE9F00758443 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

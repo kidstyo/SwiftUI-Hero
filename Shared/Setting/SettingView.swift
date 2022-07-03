@@ -11,6 +11,8 @@ struct SettingView: View {
     @AppStorage(DARK_MODE_KEY) var appAppearance: AppearanceOptions = .system
     @AppStorage(THEME_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
 
+    @AppStorage(PRO_COLOR_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+
     var body: some View {
         Form {
             // MARK: Theme
@@ -22,7 +24,7 @@ struct SettingView: View {
                 } icon: {
                     Image(systemName: "squareshape.fill")
                 }
-                .foregroundColor(appTheme.mainColor)
+                .foregroundColor(appTheme != .custom ? appTheme.mainColor : proColor)
             }
 
             // MARK: Dark Mode
