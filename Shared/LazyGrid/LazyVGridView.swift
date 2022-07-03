@@ -101,6 +101,11 @@ struct LazyVGridView: View {
 
 struct LazyVGridView_Previews: PreviewProvider {
     static var previews: some View {
-        LazyVGridView()
+        Group{
+            LazyVGridView()
+                .previewDevice("iPhone 13 Pro")
+            LazyVGridView()
+                .previewDevice("iPhone 13 mini")
+        }
     }
 }

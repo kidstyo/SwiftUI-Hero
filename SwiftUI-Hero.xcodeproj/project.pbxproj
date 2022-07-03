@@ -68,6 +68,8 @@
 		8C96E2A428706AA400758443 /* MyDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A228706AA400758443 /* MyDarkMode.swift */; };
 		8C96E2A728706B6000758443 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A628706B6000758443 /* SettingView.swift */; };
 		8C96E2A828706B6000758443 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A628706B6000758443 /* SettingView.swift */; };
+		8C96E2AA287178D200758443 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A9287178D200758443 /* ThemeView.swift */; };
+		8C96E2AB287178D200758443 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A9287178D200758443 /* ThemeView.swift */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
@@ -197,6 +199,7 @@
 		8C96E29E28705EF000758443 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 		8C96E2A228706AA400758443 /* MyDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDarkMode.swift; sourceTree = "<group>"; };
 		8C96E2A628706B6000758443 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8C96E2A9287178D200758443 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
 		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
@@ -394,14 +397,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8C96E2A128706A7C00758443 /* Dark Mode */ = {
-			isa = PBXGroup;
-			children = (
-				8C96E2A228706AA400758443 /* MyDarkMode.swift */,
-			);
-			path = "Dark Mode";
-			sourceTree = "<group>";
-		};
 		8C96E2A528706B5600758443 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,7 +467,6 @@
 		8CA4A3C82868569200589C56 /* Kidstyo */ = {
 			isa = PBXGroup;
 			children = (
-				8C96E2A128706A7C00758443 /* Dark Mode */,
 				8C96E29D28705E3600758443 /* Model */,
 				8CCCEDAA286DF3B200C65896 /* Theme */,
 				8CA4A3C92868810D00589C56 /* View */,
@@ -486,6 +480,7 @@
 			isa = PBXGroup;
 			children = (
 				8CA4A3CA2868811900589C56 /* UrlWebView.swift */,
+				8C96E2A9287178D200758443 /* ThemeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -522,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				8CCCEDAB286DF3C300C65896 /* Theme.swift */,
+				8C96E2A228706AA400758443 /* MyDarkMode.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -753,6 +749,7 @@
 				8C800B3B284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
+				8C96E2AA287178D200758443 /* ThemeView.swift in Sources */,
 				8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8CA4A3C62868508700589C56 /* TextStyleView.swift in Sources */,
 				8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */,
@@ -819,6 +816,7 @@
 				8C800B3C284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29F28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79EE2841BE53003EEF78 /* LabelView.swift in Sources */,
+				8C96E2AB287178D200758443 /* ThemeView.swift in Sources */,
 				8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8CA4A3C72868508700589C56 /* TextStyleView.swift in Sources */,
 				8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */,

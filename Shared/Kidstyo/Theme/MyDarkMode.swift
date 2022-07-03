@@ -3,16 +3,17 @@
 //  SwiftUI-Hero
 //
 //  Created by kidstyo on 2022/7/2.
+//  📝Version: 1⃣️
 //
 
 import Foundation
 import SwiftUI
 
 enum AppearanceOptions: String, CaseIterable {
-    case system, light, dark
+    case light, dark, system
 }
 
-let DARK_MODE_KEY = "appAppearance"
+let DARK_MODE_KEY = "currentColorScheme"
 
 class AppearanceController {
     static let shared = AppearanceController()
