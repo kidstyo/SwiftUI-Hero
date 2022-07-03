@@ -28,7 +28,7 @@ struct MonthContributionView: View {
 
                     Text(bindingMonth.toMonth())
                         .font(.callout.bold())
-                        .foregroundColor(Color.theme.primary)
+                        .foregroundColor(Theme.orange.mainColor)
                 }
 
                 Spacer(minLength: 0)

@@ -12,13 +12,37 @@ import WidgetKit
 struct ThemeView: View {
     @AppStorage(THEME_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
 
+    @AppStorage(PRO_COLOR_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+
     let columns = [
-        GridItem(.adaptive(minimum: 80))
+        GridItem(.adaptive(minimum: 70))
     ]
 
     var body: some View {
-        ScrollView{
+        List{
+            ColorPicker("Pro Color Setting", selection: $proColor)
+
             LazyVGrid(columns: columns, spacing: 20) {
+                // Pro Color
+                VStack{
+                    Text("Pro Color")
+                        .font(.system(.footnote, design: .rounded))
+                        .foregroundColor(proColor)
+                        .lineLimit(1)
+
+                    Spacer()
+
+                    Image(systemName: "circle")
+                        .font(.title)
+                        .foregroundColor(proColor)
+                        .onTapGesture {
+                            HapticManager.instance.impact()
+                            withAnimation {
+//                                appTheme = theme
+                            }
+                        }
+                }
+
                 ForEach(Theme.allCases){ theme in
                     VStack{
                         Text(theme.name)
@@ -33,13 +57,16 @@ struct ThemeView: View {
                             .foregroundColor(theme.mainColor)
                             .onTapGesture {
                                 HapticManager.instance.impact()
-                                appTheme = theme
+                                withAnimation {
+                                    appTheme = theme
+                                }
                             }
                     }
                 }
             }
             .padding(.vertical)
         }
+        .listStyle(.insetGrouped)
         .navigationTitle("Theme")
         .onChange(of: appTheme) { newValue in
             WidgetCenter.shared.reloadAllTimelines()

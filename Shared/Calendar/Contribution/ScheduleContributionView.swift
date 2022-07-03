@@ -35,7 +35,7 @@ struct ScheduleContributionView: View {
 
                     Text(bindingSelectDate.month.toMonth())
                         .font(.callout.bold())
-                        .foregroundColor(Color.theme.primary)
+                        .foregroundColor(Theme.orange.mainColor)
                 }
 
                 Spacer(minLength: 0)
