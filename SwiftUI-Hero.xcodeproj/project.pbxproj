@@ -83,6 +83,9 @@
 		8C96E2E12871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
 		8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2DF2871C28D00758443 /* AppSetting.swift */; };
 		8C96E2E42871DE9F00758443 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A3A92860188A00589C56 /* ColorExtension.swift */; };
+		8C96E2E62871EE9B00758443 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2E52871EE9B00758443 /* AppStorage.swift */; };
+		8C96E2E72871EE9B00758443 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2E52871EE9B00758443 /* AppStorage.swift */; };
+		8C96E2E82871EE9B00758443 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2E52871EE9B00758443 /* AppStorage.swift */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
@@ -230,6 +233,7 @@
 		8C96E2D328718FEF00758443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C96E2DF2871C28D00758443 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		8C96E2E32871C3CC00758443 /* JustWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustWidgetsExtension.entitlements; sourceTree = "<group>"; };
+		8C96E2E52871EE9B00758443 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
 		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
@@ -462,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				8C96E2DF2871C28D00758443 /* AppSetting.swift */,
+				8C96E2E52871EE9B00758443 /* AppStorage.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -840,6 +845,7 @@
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3AF28601BD600589C56 /* HapticManager.swift in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
+				8C96E2E62871EE9B00758443 /* AppStorage.swift in Sources */,
 				8CA4A3BE2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */,
 				8C800B3B284F83D300CB7FFF /* LazyHStackView.swift in Sources */,
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
@@ -932,6 +938,7 @@
 				8CA4A3AB2860188A00589C56 /* ColorExtension.swift in Sources */,
 				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
 				8CA4A3CC2868811900589C56 /* UrlWebView.swift in Sources */,
+				8C96E2E72871EE9B00758443 /* AppStorage.swift in Sources */,
 				8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
@@ -956,6 +963,7 @@
 				8C96E2DC2871C18C00758443 /* Theme.swift in Sources */,
 				8C96E2D428718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
 				8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */,
+				8C96E2E82871EE9B00758443 /* AppStorage.swift in Sources */,
 				8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */,
 				8C96E2E42871DE9F00758443 /* ColorExtension.swift in Sources */,
 			);

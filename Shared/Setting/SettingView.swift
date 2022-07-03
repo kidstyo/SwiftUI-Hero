@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SettingView: View {
     @AppStorage(DARK_MODE_KEY) var appAppearance: AppearanceOptions = .system
-    @AppStorage(THEME_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
+    @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
 
-    @AppStorage(PRO_COLOR_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
 
     var body: some View {
         Form {

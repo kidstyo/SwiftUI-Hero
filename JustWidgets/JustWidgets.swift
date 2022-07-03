@@ -42,9 +42,9 @@ struct SimpleEntry: TimelineEntry {
 
 struct JustWidgetsEntryView : View {
     var entry: Provider.Entry
-    @AppStorage(THEME_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
+    @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
 
-    @AppStorage(PRO_COLOR_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
 
     var body: some View {
         Text(entry.date, style: .time)

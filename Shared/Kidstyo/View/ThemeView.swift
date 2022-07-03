@@ -10,9 +10,12 @@ import SwiftUI
 import WidgetKit
 
 struct ThemeView: View {
-    @AppStorage(THEME_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
+    // 是否Pro
+    @AppStorage(PRO_STORAGE_KEY) private var isPurchased: Bool = false
 
-    @AppStorage(PRO_COLOR_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+    @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
+
+    @AppStorage(PRO_COLOR_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
 
     let columns = [
         GridItem(.adaptive(minimum: 70))
@@ -38,6 +41,7 @@ struct ThemeView: View {
                             .foregroundColor(proColor)
                             .onTapGesture {
                                 HapticManager.instance.impact()
+                                // MARK: Pro 判定
                                 withAnimation {
                                     appTheme = Theme.custom
                                 }
