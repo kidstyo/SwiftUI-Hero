@@ -15,11 +15,13 @@ struct SwiftUI_HeroApp: App {
     @State var note: String = "" // The note we'll pass into our detail view
     
     let persistenceController = PersistenceController.shared
+    @StateObject var viewManager = ViewManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(viewManager)
                 .sheet(item: $personToShow) { person in
                     NavigationView {
                         PersonDetailView(person: person, note: $note)
@@ -34,6 +36,9 @@ struct SwiftUI_HeroApp: App {
                 }
                 .task {
                     AppearanceController.shared.setAppearance()
+                }
+                .sheet(isPresented: $viewManager.testSheet) {
+                    ProView()
                 }
         }
     }

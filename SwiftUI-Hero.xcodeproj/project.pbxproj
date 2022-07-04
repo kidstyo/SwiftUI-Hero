@@ -86,6 +86,12 @@
 		8C96E2E62871EE9B00758443 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2E52871EE9B00758443 /* AppStorage.swift */; };
 		8C96E2E72871EE9B00758443 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2E52871EE9B00758443 /* AppStorage.swift */; };
 		8C96E2E82871EE9B00758443 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2E52871EE9B00758443 /* AppStorage.swift */; };
+		8C96E2EB28731E0500758443 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EA28731E0500758443 /* ViewManager.swift */; };
+		8C96E2EC28731E0500758443 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EA28731E0500758443 /* ViewManager.swift */; };
+		8C96E2ED28731E0500758443 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EA28731E0500758443 /* ViewManager.swift */; };
+		8C96E2EF2873218000758443 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EE2873218000758443 /* ProView.swift */; };
+		8C96E2F02873218000758443 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EE2873218000758443 /* ProView.swift */; };
+		8C96E2F12873218000758443 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EE2873218000758443 /* ProView.swift */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
@@ -234,6 +240,8 @@
 		8C96E2DF2871C28D00758443 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		8C96E2E32871C3CC00758443 /* JustWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustWidgetsExtension.entitlements; sourceTree = "<group>"; };
 		8C96E2E52871EE9B00758443 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		8C96E2EA28731E0500758443 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		8C96E2EE2873218000758443 /* ProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProView.swift; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
 		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
@@ -471,6 +479,14 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		8C96E2E928731DFE00758443 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C96E2EA28731E0500758443 /* ViewManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		8CA44EDB284BBA8A00A16E1A /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +549,7 @@
 		8CA4A3C82868569200589C56 /* Kidstyo */ = {
 			isa = PBXGroup;
 			children = (
+				8C96E2E928731DFE00758443 /* Manager */,
 				8C96E2DE2871C25C00758443 /* Config */,
 				8C96E29D28705E3600758443 /* Model */,
 				8CCCEDAA286DF3B200C65896 /* Theme */,
@@ -548,6 +565,7 @@
 			children = (
 				8CA4A3CA2868811900589C56 /* UrlWebView.swift */,
 				8C96E2A9287178D200758443 /* ThemeView.swift */,
+				8C96E2EE2873218000758443 /* ProView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -823,6 +841,7 @@
 			files = (
 				8C369E902844A918000F50BE /* ShortcutView.swift in Sources */,
 				8CA4A3B228606A7D00589C56 /* IntExtension.swift in Sources */,
+				8C96E2EB28731E0500758443 /* ViewManager.swift in Sources */,
 				8CA4A3A4285F77FF00589C56 /* DateExtension.swift in Sources */,
 				8C81827D2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld in Sources */,
 				8C75024C2840E46300ECEB99 /* ContentView.swift in Sources */,
@@ -877,6 +896,7 @@
 				8C8182812840D33B0089735A /* CloudView.swift in Sources */,
 				8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
+				8C96E2EF2873218000758443 /* ProView.swift in Sources */,
 				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
@@ -943,8 +963,10 @@
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8CA4A3B928647BF200589C56 /* MonthContributionView.swift in Sources */,
+				8C96E2F02873218000758443 /* ProView.swift in Sources */,
 				8C96E2A828706B6000758443 /* SettingView.swift in Sources */,
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
+				8C96E2EC28731E0500758443 /* ViewManager.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CA4A39E285F76EC00589C56 /* MyCalendarView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
@@ -964,7 +986,9 @@
 				8C96E2D428718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
 				8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */,
 				8C96E2E82871EE9B00758443 /* AppStorage.swift in Sources */,
+				8C96E2F12873218000758443 /* ProView.swift in Sources */,
 				8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */,
+				8C96E2ED28731E0500758443 /* ViewManager.swift in Sources */,
 				8C96E2E42871DE9F00758443 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

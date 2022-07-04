@@ -15,6 +15,7 @@ struct ThemeView: View {
 
     // Theme
     @Environment(\.colorScheme) private var colorScheme
+
     @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
     @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
     @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
@@ -22,6 +23,7 @@ struct ThemeView: View {
     let columns = [
         GridItem(.adaptive(minimum: 70))
     ]
+    @State var showProView: Bool  = false
 
     var body: some View {
         List{
@@ -38,20 +40,25 @@ struct ThemeView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     VStack{
                         Text("Pro \(colorScheme == .dark ? "Dark" : "Light")")
-                            .font(.system(.footnote, design: .rounded))
-                            .foregroundColor(colorScheme == .dark ? proDarkColor : proLightColor)
+                            .font(.system(.caption, design: .rounded))
+                            .foregroundColor(ThemeManager.shared.currentProColor(colorScheme: colorScheme))
                             .lineLimit(1)
 
                         Spacer()
 
                         Image(systemName: appTheme == .custom ? "circle.fill" : "circle")
-                            .font(.title)
-                            .foregroundColor(colorScheme == .dark ? proDarkColor : proLightColor)
+                            .font(.title3)
+                            .foregroundColor(ThemeManager.shared.currentProColor(colorScheme: colorScheme))
                             .onTapGesture {
                                 HapticManager.instance.impact()
                                 // MARK: Pro 判定
-                                withAnimation {
-                                    appTheme = Theme.custom
+                                if isPurchased{
+                                    withAnimation{
+                                        appTheme = Theme.custom
+                                    }
+                                }
+                                else{
+                                    showProView.toggle()
                                 }
                             }
                     }
@@ -60,14 +67,14 @@ struct ThemeView: View {
                         if theme != .custom{
                             VStack{
                                 Text(theme.name)
-                                    .font(.system(.footnote, design: .rounded))
+                                    .font(.system(.caption, design: .rounded))
                                     .foregroundColor(theme.mainColor)
                                     .lineLimit(1)
 
                                 Spacer()
 
                                 Image(systemName: appTheme == theme ? "circle.fill" : "circle")
-                                    .font(.title)
+                                    .font(.title3)
                                     .foregroundColor(theme.mainColor)
                                     .onTapGesture {
                                         HapticManager.instance.impact()
@@ -80,6 +87,10 @@ struct ThemeView: View {
                     }
                 }
                 .padding(.vertical)
+                .sheet(isPresented: $showProView) {
+                    ProView()
+                }
+                
             } header: {
                 Text("主题色选择（只在本地保存）")
             }
@@ -89,6 +100,16 @@ struct ThemeView: View {
         .onChange(of: appTheme) { newValue in
             WidgetCenter.shared.reloadAllTimelines()
         }
+        .onChange(of: proLightColor) { newValue in
+            if appTheme == .custom{
+                WidgetCenter.shared.reloadAllTimelines()
+            }
+        }
+        .onChange(of: proDarkColor) { newValue in
+            if appTheme == .custom{
+                WidgetCenter.shared.reloadAllTimelines()
+            }
+        }
     }
 }
 
@@ -96,6 +117,7 @@ struct ThemeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ThemeView()
+                .environmentObject(ViewManager())
         }
     }
 }
