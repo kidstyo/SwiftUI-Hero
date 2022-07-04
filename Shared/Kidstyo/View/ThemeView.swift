@@ -25,6 +25,9 @@ struct ThemeView: View {
     ]
     @State var showProView: Bool  = false
 
+    let TEXT_FONT: Font = .footnote.bold()
+    let CIRCLE_FONT: Font = .title
+
     var body: some View {
         List{
             Section {
@@ -40,14 +43,14 @@ struct ThemeView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     VStack{
                         Text("Pro \(colorScheme == .dark ? "Dark" : "Light")")
-                            .font(.system(.caption, design: .rounded))
+                            .font(TEXT_FONT)
                             .foregroundColor(ThemeManager.shared.currentProColor(colorScheme: colorScheme))
                             .lineLimit(1)
 
                         Spacer()
 
                         Image(systemName: appTheme == .custom ? "circle.fill" : "circle")
-                            .font(.title3)
+                            .font(CIRCLE_FONT)
                             .foregroundColor(ThemeManager.shared.currentProColor(colorScheme: colorScheme))
                             .onTapGesture {
                                 HapticManager.instance.impact()
@@ -67,14 +70,14 @@ struct ThemeView: View {
                         if theme != .custom{
                             VStack{
                                 Text(theme.name)
-                                    .font(.system(.caption, design: .rounded))
+                                    .font(TEXT_FONT)
                                     .foregroundColor(theme.mainColor)
                                     .lineLimit(1)
 
                                 Spacer()
 
                                 Image(systemName: appTheme == theme ? "circle.fill" : "circle")
-                                    .font(.title3)
+                                    .font(CIRCLE_FONT)
                                     .foregroundColor(theme.mainColor)
                                     .onTapGesture {
                                         HapticManager.instance.impact()
@@ -117,7 +120,7 @@ struct ThemeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ThemeView()
-                .environmentObject(ViewManager())
+//                .previewDevice("iPhone 13 Pro")
         }
     }
 }

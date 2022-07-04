@@ -13,8 +13,7 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     case classic
     case classic1
     case classic2
-    case classic3
-    case bubblegum
+    case bubble
     case buttercup
     case indigo
     case lavender
@@ -32,7 +31,6 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     case teal
     case yellow
     case nokia
-    case nord1
     case nord2
     case nord3
     case nord4
