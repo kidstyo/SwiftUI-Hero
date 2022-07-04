@@ -43,11 +43,15 @@ struct SimpleEntry: TimelineEntry {
 struct JustWidgetsEntryView : View {
     var entry: Provider.Entry
 
+    // Theme
     @Environment(\.colorScheme) private var colorScheme
+    @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
+    @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
 
     var body: some View {
         Text(entry.date, style: .time)
-            .foregroundColor(ThemeManager.shared.currentColor(colorScheme: colorScheme))
+            .foregroundColor(appTheme == .custom ? (colorScheme == .dark ? proDarkColor : proLightColor) : appTheme.mainColor)
     }
 }
 

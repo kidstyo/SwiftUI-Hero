@@ -15,7 +15,6 @@ struct ThemeView: View {
 
     // Theme
     @Environment(\.colorScheme) private var colorScheme
-
     @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
     @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
     @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
@@ -44,14 +43,14 @@ struct ThemeView: View {
                     VStack{
                         Text("Pro \(colorScheme == .dark ? "Dark" : "Light")")
                             .font(TEXT_FONT)
-                            .foregroundColor(ThemeManager.shared.currentProColor(colorScheme: colorScheme))
+                            .foregroundColor(proDarkColor)
                             .lineLimit(1)
 
                         Spacer()
 
                         Image(systemName: appTheme == .custom ? "circle.fill" : "circle")
                             .font(CIRCLE_FONT)
-                            .foregroundColor(ThemeManager.shared.currentProColor(colorScheme: colorScheme))
+                            .foregroundColor(proLightColor)
                             .onTapGesture {
                                 HapticManager.instance.impact()
                                 // MARK: Pro 判定

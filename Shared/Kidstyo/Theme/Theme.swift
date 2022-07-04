@@ -61,21 +61,21 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     }
 }
 
-
-class ThemeManager{
-    static let shared = ThemeManager()
-
-    @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
-    @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
-    @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
-
-    // MARK: 除了ThemeView可以使用
-    func currentProColor(colorScheme: ColorScheme) -> Color{
-        return colorScheme == .dark ? proDarkColor : proLightColor
-    }
-
-    func currentColor(colorScheme: ColorScheme) -> Color{
-        return appTheme == .custom ? currentProColor(colorScheme: colorScheme) : appTheme.mainColor
-    }
-}
-
+//
+//class ThemeManager{
+//    static let shared = ThemeManager()
+//
+//    @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
+//    @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
+//    @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
+//
+//    // MARK: 除了ThemeView可以使用
+//    func currentProColor(colorScheme: ColorScheme) -> Color{
+//        return colorScheme == .dark ? proDarkColor : proLightColor
+//    }
+//
+//    func currentColor(colorScheme: ColorScheme) -> Color{
+//        return appTheme == .custom ? currentProColor(colorScheme: colorScheme) : appTheme.mainColor
+//    }
+//}
+//
