@@ -5,7 +5,8 @@
 import SwiftUI
 
 let THEME_STORAGE_KEY = "THEME_STORAGE_KEY"
-let PRO_COLOR_STORAGE_KEY = "PRO_COLOR_STORAGE_KEY"
+let PRO_COLOR_LIGHT_STORAGE_KEY = "PRO_COLOR_LIGHT_STORAGE_KEY"
+let PRO_COLOR_DARK_STORAGE_KEY = "PRO_COLOR_DARK_STORAGE_KEY"
 
 enum Theme: String, CaseIterable, Identifiable, Codable {
     case custom

@@ -13,9 +13,11 @@ struct ThemeView: View {
     // 是否Pro
     @AppStorage(PRO_STORAGE_KEY) private var isPurchased: Bool = false
 
+    // Theme
+    @Environment(\.colorScheme) private var colorScheme
     @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
-
-    @AppStorage(PRO_COLOR_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
 
     let columns = [
         GridItem(.adaptive(minimum: 70))
@@ -24,21 +26,27 @@ struct ThemeView: View {
     var body: some View {
         List{
             Section {
-                ColorPicker("Pro Color Setting", selection: $proColor)
-                    .foregroundColor(proColor)
+                if colorScheme == .dark{
+                    ColorPicker("Pro Color Dark", selection: $proDarkColor)
+                        .foregroundColor(proDarkColor)
+                }
+                else{
+                    ColorPicker("Pro Color Light", selection: $proLightColor)
+                        .foregroundColor(proLightColor)
+                }
 
                 LazyVGrid(columns: columns, spacing: 20) {
                     VStack{
-                        Text("Pro Color")
+                        Text("Pro \(colorScheme == .dark ? "Dark" : "Light")")
                             .font(.system(.footnote, design: .rounded))
-                            .foregroundColor(proColor)
+                            .foregroundColor(colorScheme == .dark ? proDarkColor : proLightColor)
                             .lineLimit(1)
 
                         Spacer()
 
                         Image(systemName: appTheme == .custom ? "circle.fill" : "circle")
                             .font(.title)
-                            .foregroundColor(proColor)
+                            .foregroundColor(colorScheme == .dark ? proDarkColor : proLightColor)
                             .onTapGesture {
                                 HapticManager.instance.impact()
                                 // MARK: Pro 判定

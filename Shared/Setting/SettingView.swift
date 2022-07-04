@@ -9,9 +9,12 @@ import SwiftUI
 
 struct SettingView: View {
     @AppStorage(DARK_MODE_KEY) var appAppearance: AppearanceOptions = .system
+ 
+    // Theme
+    @Environment(\.colorScheme) private var colorScheme
     @AppStorage(THEME_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var appTheme: Theme = .classic
-
-    @AppStorage(PRO_COLOR_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_LIGHT_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proLightColor: Color = Theme.orange.mainColor
+    @AppStorage(PRO_COLOR_DARK_STORAGE_KEY, store: UserDefaults(suiteName: GROUP_ID)) var proDarkColor: Color = Theme.orange.mainColor
 
     var body: some View {
         Form {
@@ -24,7 +27,7 @@ struct SettingView: View {
                 } icon: {
                     Image(systemName: "squareshape.fill")
                 }
-                .foregroundColor(appTheme != .custom ? appTheme.mainColor : proColor)
+                .foregroundColor(appTheme != .custom ? appTheme.mainColor : colorScheme == .dark ? proDarkColor : proLightColor)
             }
 
             // MARK: Dark Mode
