@@ -43,14 +43,14 @@ struct ThemeView: View {
                     VStack{
                         Text("Pro \(colorScheme == .dark ? "Dark" : "Light")")
                             .font(TEXT_FONT)
-                            .foregroundColor(proDarkColor)
+                            .foregroundColor(colorScheme == .dark ? proDarkColor : proLightColor)
                             .lineLimit(1)
 
                         Spacer()
 
                         Image(systemName: appTheme == .custom ? "circle.fill" : "circle")
                             .font(CIRCLE_FONT)
-                            .foregroundColor(proLightColor)
+                            .foregroundColor(colorScheme == .dark ? proDarkColor : proLightColor)
                             .onTapGesture {
                                 HapticManager.instance.impact()
                                 // MARK: Pro 判定

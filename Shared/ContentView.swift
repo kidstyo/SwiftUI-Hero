@@ -11,9 +11,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                NavigationLink("Setting") {
-                    SettingView()
-                        .navigationTitle(Text("Setting"))
+                Group
+                {
+                    NavigationLink("ListView") {
+                        SampleListView()
+                            .navigationTitle(Text("ListView"))
+                    }
+
+                    NavigationLink("ItemView") {
+                        ItemView()
+                            .navigationTitle(Text("ItemView"))
+                    }
+
+                    NavigationLink("Setting") {
+                        SettingView()
+                            .navigationTitle(Text("Setting"))
+                    }
                 }
 
                 Group{

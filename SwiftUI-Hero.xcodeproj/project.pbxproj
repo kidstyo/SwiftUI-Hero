@@ -92,6 +92,14 @@
 		8C96E2EF2873218000758443 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EE2873218000758443 /* ProView.swift */; };
 		8C96E2F02873218000758443 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EE2873218000758443 /* ProView.swift */; };
 		8C96E2F12873218000758443 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2EE2873218000758443 /* ProView.swift */; };
+		8C96E2F4287718ED00758443 /* ProTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2F3287718ED00758443 /* ProTaskItemView.swift */; };
+		8C96E2F5287718ED00758443 /* ProTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2F3287718ED00758443 /* ProTaskItemView.swift */; };
+		8C96E2F6287718ED00758443 /* ProTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2F3287718ED00758443 /* ProTaskItemView.swift */; };
+		8C96E2F92877190800758443 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2F82877190800758443 /* ItemView.swift */; };
+		8C96E2FA2877190800758443 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2F82877190800758443 /* ItemView.swift */; };
+		8C96E2FB2877190800758443 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2F82877190800758443 /* ItemView.swift */; };
+		8C96E2FE28772CF700758443 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2FD28772CF700758443 /* SampleListView.swift */; };
+		8C96E2FF28772CF700758443 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2FD28772CF700758443 /* SampleListView.swift */; };
 		8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */; };
 		8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */; };
@@ -242,6 +250,9 @@
 		8C96E2E52871EE9B00758443 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		8C96E2EA28731E0500758443 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		8C96E2EE2873218000758443 /* ProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProView.swift; sourceTree = "<group>"; };
+		8C96E2F3287718ED00758443 /* ProTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTaskItemView.swift; sourceTree = "<group>"; };
+		8C96E2F82877190800758443 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		8C96E2FD28772CF700758443 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 		8CA44EDC284BBA9900A16E1A /* Today3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today3x3View.swift; sourceTree = "<group>"; };
 		8CA4A39C285F76EC00589C56 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 		8CA4A39F285F776500589C56 /* CalendarSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleView.swift; sourceTree = "<group>"; };
@@ -399,6 +410,8 @@
 			isa = PBXGroup;
 			children = (
 				8CA4A3C82868569200589C56 /* Kidstyo */,
+				8C96E2FC28772CE400758443 /* ListView */,
+				8C96E2F2287718D400758443 /* Item */,
 				8C96E2A528706B5600758443 /* Setting */,
 				8CA4A3C42868507300589C56 /* Style */,
 				8CA4A39B285F76D900589C56 /* Calendar */,
@@ -485,6 +498,23 @@
 				8C96E2EA28731E0500758443 /* ViewManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		8C96E2F2287718D400758443 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				8C96E2F3287718ED00758443 /* ProTaskItemView.swift */,
+				8C96E2F82877190800758443 /* ItemView.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		8C96E2FC28772CE400758443 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				8C96E2FD28772CF700758443 /* SampleListView.swift */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 		8CA44EDB284BBA8A00A16E1A /* Sample */ = {
@@ -861,6 +891,7 @@
 				8CCCEDB0286E70C200C65896 /* TabView.swift in Sources */,
 				8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */,
 				8CA4A3BB2864824900589C56 /* ContributionUtil.swift in Sources */,
+				8C96E2F4287718ED00758443 /* ProTaskItemView.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3AF28601BD600589C56 /* HapticManager.swift in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
@@ -875,6 +906,7 @@
 				8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */,
 				8CA4A3A0285F776500589C56 /* CalendarSampleView.swift in Sources */,
 				8CA44EDD284BBA9900A16E1A /* Today3x3View.swift in Sources */,
+				8C96E2F92877190800758443 /* ItemView.swift in Sources */,
 				8C8182832840D33B0089735A /* Persistence.swift in Sources */,
 				8C7502502840FE5C00ECEB99 /* TextView.swift in Sources */,
 				8C96E29F28705EF000758443 /* EmojiModel.swift in Sources */,
@@ -897,6 +929,7 @@
 				8CA4A39D285F76EC00589C56 /* MyCalendarView.swift in Sources */,
 				8CFF781D2848ED7600F1EACE /* People.swift in Sources */,
 				8C96E2EF2873218000758443 /* ProView.swift in Sources */,
+				8C96E2FE28772CF700758443 /* SampleListView.swift in Sources */,
 				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
@@ -960,6 +993,7 @@
 				8CA4A3CC2868811900589C56 /* UrlWebView.swift in Sources */,
 				8C96E2E72871EE9B00758443 /* AppStorage.swift in Sources */,
 				8C800B45285087C300CB7FFF /* PHPickerView.swift in Sources */,
+				8C96E2FA2877190800758443 /* ItemView.swift in Sources */,
 				8C6D79F4284208EA003EEF78 /* TextEditorView.swift in Sources */,
 				8C8182802840D33B0089735A /* SwiftUI_HeroApp.swift in Sources */,
 				8CA4A3B928647BF200589C56 /* MonthContributionView.swift in Sources */,
@@ -967,8 +1001,10 @@
 				8C96E2A828706B6000758443 /* SettingView.swift in Sources */,
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C96E2EC28731E0500758443 /* ViewManager.swift in Sources */,
+				8C96E2F5287718ED00758443 /* ProTaskItemView.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CA4A39E285F76EC00589C56 /* MyCalendarView.swift in Sources */,
+				8C96E2FF28772CF700758443 /* SampleListView.swift in Sources */,
 				8CFF781E2848ED7600F1EACE /* People.swift in Sources */,
 				8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
@@ -985,7 +1021,9 @@
 				8C96E2DC2871C18C00758443 /* Theme.swift in Sources */,
 				8C96E2D428718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
 				8C96E2E22871C28D00758443 /* AppSetting.swift in Sources */,
+				8C96E2FB2877190800758443 /* ItemView.swift in Sources */,
 				8C96E2E82871EE9B00758443 /* AppStorage.swift in Sources */,
+				8C96E2F6287718ED00758443 /* ProTaskItemView.swift in Sources */,
 				8C96E2F12873218000758443 /* ProView.swift in Sources */,
 				8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */,
 				8C96E2ED28731E0500758443 /* ViewManager.swift in Sources */,
