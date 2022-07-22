@@ -11,6 +11,14 @@
 		8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C3622854539D0080CD3C /* BottomSheetView.swift */; };
 		8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */; };
 		8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */; };
+		8C25602C287B277B008E9B25 /* SampleEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25602B287B277B008E9B25 /* SampleEmojiView.swift */; };
+		8C25602D287B277B008E9B25 /* SampleEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25602B287B277B008E9B25 /* SampleEmojiView.swift */; };
+		8C256032287C4A5B008E9B25 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C256031287C4A5B008E9B25 /* EmojiTextField.swift */; };
+		8C256033287C4A5B008E9B25 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C256031287C4A5B008E9B25 /* EmojiTextField.swift */; };
+		8C256035287C5261008E9B25 /* EmojiTextField2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C256034287C5261008E9B25 /* EmojiTextField2.swift */; };
+		8C256036287C5261008E9B25 /* EmojiTextField2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C256034287C5261008E9B25 /* EmojiTextField2.swift */; };
+		8C25605B2883B4E8008E9B25 /* printChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25605A2883B4E8008E9B25 /* printChanges.swift */; };
+		8C25605C2883B4E8008E9B25 /* printChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25605A2883B4E8008E9B25 /* printChanges.swift */; };
 		8C357AFB28450BB800918DB9 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C357AFA28450BB800918DB9 /* Intents.framework */; };
 		8C357AFE28450BB800918DB9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357AFD28450BB800918DB9 /* IntentHandler.swift */; };
 		8C357B0228450BB800918DB9 /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C357AF928450BB800918DB9 /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -62,6 +70,8 @@
 		8C8182842840D33B0089735A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81826E2840D33B0089735A /* Persistence.swift */; };
 		8C8182852840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
 		8C8182862840D33B0089735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C81826F2840D33B0089735A /* Assets.xcassets */; };
+		8C89AF752886FC12000D7213 /* ViewModelSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89AF742886FC12000D7213 /* ViewModelSampleView.swift */; };
+		8C89AF762886FC14000D7213 /* ViewModelSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89AF742886FC12000D7213 /* ViewModelSampleView.swift */; };
 		8C96E29F28705EF000758443 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E29E28705EF000758443 /* EmojiModel.swift */; };
 		8C96E2A028705EFF00758443 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E29E28705EF000758443 /* EmojiModel.swift */; };
 		8C96E2A328706AA400758443 /* MyDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96E2A228706AA400758443 /* MyDarkMode.swift */; };
@@ -202,6 +212,10 @@
 /* Begin PBXFileReference section */
 		8C08C3622854539D0080CD3C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModelView.swift; sourceTree = "<group>"; };
+		8C25602B287B277B008E9B25 /* SampleEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEmojiView.swift; sourceTree = "<group>"; };
+		8C256031287C4A5B008E9B25 /* EmojiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
+		8C256034287C5261008E9B25 /* EmojiTextField2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField2.swift; sourceTree = "<group>"; };
+		8C25605A2883B4E8008E9B25 /* printChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printChanges.swift; sourceTree = "<group>"; };
 		8C357AF928450BB800918DB9 /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C357AFA28450BB800918DB9 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		8C357AFD28450BB800918DB9 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -234,6 +248,7 @@
 		8C8182742840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827A2840D33B0089735A /* SwiftUI-Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81827C2840D33B0089735A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8C89AF742886FC12000D7213 /* ViewModelSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelSampleView.swift; sourceTree = "<group>"; };
 		8C96E29E28705EF000758443 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 		8C96E2A228706AA400758443 /* MyDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDarkMode.swift; sourceTree = "<group>"; };
 		8C96E2A628706B6000758443 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -335,6 +350,14 @@
 			path = Sheet;
 			sourceTree = "<group>";
 		};
+		8C25602A287B276B008E9B25 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				8C25602B287B277B008E9B25 /* SampleEmojiView.swift */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
 		8C357AFC28450BB800918DB9 /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,11 +433,13 @@
 			isa = PBXGroup;
 			children = (
 				8CA4A3C82868569200589C56 /* Kidstyo */,
+				8C25602A287B276B008E9B25 /* Emoji */,
 				8C96E2FC28772CE400758443 /* ListView */,
 				8C96E2F2287718D400758443 /* Item */,
 				8C96E2A528706B5600758443 /* Setting */,
 				8CA4A3C42868507300589C56 /* Style */,
 				8CA4A39B285F76D900589C56 /* Calendar */,
+				8C89AF732886FBEE000D7213 /* ViewModelSample */,
 				8CCCEDAE286E706700C65896 /* TabView */,
 				8C08C361285452C70080CD3C /* Sheet */,
 				8CA5984C28520755002E8264 /* Typography */,
@@ -433,6 +458,7 @@
 				8C81826F2840D33B0089735A /* Assets.xcassets */,
 				8C81826A2840D33B0089735A /* SwiftUI_Hero.xcdatamodeld */,
 				8CAFBA2A285DA3970026A6E7 /* DisclosureGroupView.swift */,
+				8C25605A2883B4E8008E9B25 /* printChanges.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -454,6 +480,14 @@
 				8C81827C2840D33B0089735A /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		8C89AF732886FBEE000D7213 /* ViewModelSample */ = {
+			isa = PBXGroup;
+			children = (
+				8C89AF742886FC12000D7213 /* ViewModelSampleView.swift */,
+			);
+			path = ViewModelSample;
 			sourceTree = "<group>";
 		};
 		8C96E29D28705E3600758443 /* Model */ = {
@@ -586,6 +620,8 @@
 				8CA4A3C92868810D00589C56 /* View */,
 				8CA4A3A2285F77F300589C56 /* Extension */,
 				8CA4A3AD28601BD000589C56 /* Haptic */,
+				8C256031287C4A5B008E9B25 /* EmojiTextField.swift */,
+				8C256034287C5261008E9B25 /* EmojiTextField2.swift */,
 			);
 			path = Kidstyo;
 			sourceTree = "<group>";
@@ -894,6 +930,7 @@
 				8C96E2F4287718ED00758443 /* ProTaskItemView.swift in Sources */,
 				8C357B0928450C2900918DB9 /* Intents.intentdefinition in Sources */,
 				8CA4A3AF28601BD600589C56 /* HapticManager.swift in Sources */,
+				8C89AF752886FC12000D7213 /* ViewModelSampleView.swift in Sources */,
 				8CD9E29828423F92006DB416 /* ImageView.swift in Sources */,
 				8C96E2E62871EE9B00758443 /* AppStorage.swift in Sources */,
 				8CA4A3BE2864A1DD00589C56 /* ScheduleContributionView.swift in Sources */,
@@ -915,9 +952,12 @@
 				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CCCEDAC286DF3C300C65896 /* Theme.swift in Sources */,
 				8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
+				8C256035287C5261008E9B25 /* EmojiTextField2.swift in Sources */,
+				8C25602C287B277B008E9B25 /* SampleEmojiView.swift in Sources */,
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CA4A3AA2860188A00589C56 /* ColorExtension.swift in Sources */,
 				8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */,
+				8C25605B2883B4E8008E9B25 /* printChanges.swift in Sources */,
 				8CA4A3CB2868811900589C56 /* UrlWebView.swift in Sources */,
 				8C800B44285087C300CB7FFF /* PHPickerView.swift in Sources */,
 				8C6D79F3284208EA003EEF78 /* TextEditorView.swift in Sources */,
@@ -932,6 +972,7 @@
 				8C96E2FE28772CF700758443 /* SampleListView.swift in Sources */,
 				8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B412850879000CB7FFF /* PHPicker.swift in Sources */,
+				8C256032287C4A5B008E9B25 /* EmojiTextField.swift in Sources */,
 				8C800B552850D69300CB7FFF /* CameraPickerView.swift in Sources */,
 				8C96E2E02871C28D00758443 /* AppSetting.swift in Sources */,
 				8C96E2D528718FEF00758443 /* JustWidgets.intentdefinition in Sources */,
@@ -960,6 +1001,7 @@
 				8C800B3F284F84CB00CB7FFF /* LazyVStackView.swift in Sources */,
 				8CA4A3A82860123600589C56 /* TagCalendarContributionView.swift in Sources */,
 				8CA4A3C328684FDF00589C56 /* TextExtension.swift in Sources */,
+				8C25605C2883B4E8008E9B25 /* printChanges.swift in Sources */,
 				8C6D79F12841FA44003EEF78 /* TextFieldView.swift in Sources */,
 				8C800B492850D57100CB7FFF /* MediaPickerView.swift in Sources */,
 				8CCA4B33284E4E1000C33560 /* LivePhotoView.swift in Sources */,
@@ -977,6 +1019,7 @@
 				8C800B542850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8CA4A3C72868508700589C56 /* TextStyleView.swift in Sources */,
 				8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */,
+				8C256036287C5261008E9B25 /* EmojiTextField2.swift in Sources */,
 				8CA4A3A1285F776500589C56 /* CalendarSampleView.swift in Sources */,
 				8CA44EDE284BBA9900A16E1A /* Today3x3View.swift in Sources */,
 				8C8182842840D33B0089735A /* Persistence.swift in Sources */,
@@ -987,6 +1030,7 @@
 				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CCCEDAD286DF3C300C65896 /* Theme.swift in Sources */,
 				8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
+				8C256033287C4A5B008E9B25 /* EmojiTextField.swift in Sources */,
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
 				8CA4A3AB2860188A00589C56 /* ColorExtension.swift in Sources */,
 				8CFF78242848EDDE00F1EACE /* PeopleViews.swift in Sources */,
@@ -1002,6 +1046,7 @@
 				8CCA4B30284E471B00C33560 /* ImagePicker.swift in Sources */,
 				8C96E2EC28731E0500758443 /* ViewManager.swift in Sources */,
 				8C96E2F5287718ED00758443 /* ProTaskItemView.swift in Sources */,
+				8C89AF762886FC14000D7213 /* ViewModelSampleView.swift in Sources */,
 				8C8182822840D33B0089735A /* CloudView.swift in Sources */,
 				8CA4A39E285F76EC00589C56 /* MyCalendarView.swift in Sources */,
 				8C96E2FF28772CF700758443 /* SampleListView.swift in Sources */,
@@ -1009,6 +1054,7 @@
 				8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B562850D69300CB7FFF /* CameraPickerView.swift in Sources */,
+				8C25602D287B277B008E9B25 /* SampleEmojiView.swift in Sources */,
 				8C96E2A428706AA400758443 /* MyDarkMode.swift in Sources */,
 				8CAFBA2C285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */,
 			);

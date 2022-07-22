@@ -1,14 +1,8 @@
 # SwiftUI-Hero
 
-https://www.yuque.com/kidstyo/appledeveloper/yd96nb
+https://www.mubucm.com/doc/6zKCBtct5Uu
 
-# Now
-
-## 🔴 热力图
-
-# Structure
-
-# 问题验证
+问题验证
 
 ### 🔴 性能问题
 
@@ -157,7 +151,7 @@ https://www.yuque.com/kidstyo/appledeveloper/yd96nb
 
 ### Swift Charts
 
-# 待定
+# Todo
 
 - [ ] 📳
 - [ ] Alert

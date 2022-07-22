@@ -30,7 +30,7 @@ func getNewDate(newYear: Int, newMonth: Int, newDay: Int = 1) -> Date{
 //    dateComponents.day = 1
 //    dateComponents.month = newMonth
 //    dateComponents.year = newYear
-    let curDateCom = DateComponents(year: newYear, month: newMonth, day: 1)
+    let curDateCom = DateComponents(year: newYear, month: newMonth, day: 1, second: 0)
     let newDate = Calendar.current.date(from: curDateCom)!
 //    print("newDate:\(newDate) - \(newYear)/\(newMonth)")
     return newDate
@@ -53,24 +53,16 @@ extension Date {
     static var yesterday: Date { return Date().dayBefore }
     static var tomorrow:  Date { return Date().dayAfter }
 
-    func toHHmm() -> String {
-        // Create Date Formatter
-        let dateFormatter = DateFormatter()
-
-        // Set Date Format
-        dateFormatter.dateFormat = "HH:mm"
-
-        // Convert Date to String
-        //    dateFormatter.string(from: date)
-        return dateFormatter.string(from: self)
-    }
-
-    func toString(dateFormat:String = "yyyy-MM-dd HH:mm:ss") -> String {
+    func toString(dateFormat: String = "yyyy-MM-dd HH:mm:ss") -> String {
         let formatter = DateFormatter()
 //        formatter.locale = Locale.init(identifier: "zh_CN")
         formatter.dateFormat = dateFormat
         let dateStr = formatter.string(from: self)
         return dateStr
+    }
+
+    func toHHmm() -> String {
+        toString(dateFormat: "HH:mm")
     }
 
     func toStringNoSS() -> String {
@@ -83,6 +75,10 @@ extension Date {
 
     func toYMD(dateFormat:String = "yyyy-MM-dd") -> String {
         return toString(dateFormat: dateFormat)
+    }
+
+    func toMMddHHmm() -> String {
+        return toString(dateFormat: "MM-dd HH:mm")
     }
 
     /*

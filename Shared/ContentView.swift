@@ -11,6 +11,50 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
+                // MARK: Sample
+                Section {
+                    NavigationLink("ViewModelSample") {
+                        ViewModelSampleView()
+                            .navigationTitle(Text("ViewModelSample"))
+                    }
+
+                    NavigationLink("PrintChangeView") {
+                        PrintChangeView()
+                            .navigationTitle(Text("PrintChangeView"))
+                    }
+
+                    NavigationLink("3x3") {
+                        Today3x3View()
+                            .navigationTitle(Text("3x3"))
+                    }
+
+                    NavigationLink("Media Picker") {
+                        MediaPickerView()
+                            .navigationTitle(Text("Media Picker"))
+                    }
+
+                    NavigationLink("DisclosureGroup") {
+                        DisclosureGroupView()
+                            .navigationTitle(Text("DisclosureGroup"))
+                    }
+
+                    Section {
+                        NavigationLink("Shortcut") {
+                            ShortcutView()
+                                .navigationTitle(Text("Shortcut"))
+                        }
+                    } header: {
+                        Text("Shortcut")
+                    }
+
+                    NavigationLink("Emoji") {
+                        SampleEmojiView()
+                            .navigationTitle(Text("Emoji"))
+                    }
+                } header: {
+                    Text("Sample")
+                }
+
                 Group
                 {
                     NavigationLink("ListView") {
@@ -27,9 +71,7 @@ struct ContentView: View {
                         SettingView()
                             .navigationTitle(Text("Setting"))
                     }
-                }
 
-                Group{
                     // MARK: Style
                     Section {
                         NavigationLink("Text Style") {
@@ -38,35 +80,6 @@ struct ContentView: View {
                         }
                     } header: {
                         Text("Style")
-                    }
-
-                    // MARK: Sample
-                    Section {
-                        NavigationLink("3x3") {
-                            Today3x3View()
-                                .navigationTitle(Text("3x3"))
-                        }
-
-                        NavigationLink("Media Picker") {
-                            MediaPickerView()
-                                .navigationTitle(Text("Media Picker"))
-                        }
-
-                        NavigationLink("DisclosureGroup") {
-                            DisclosureGroupView()
-                                .navigationTitle(Text("DisclosureGroup"))
-                        }
-
-                        Section {
-                            NavigationLink("Shortcut") {
-                                ShortcutView()
-                                    .navigationTitle(Text("Shortcut"))
-                            }
-                        } header: {
-                            Text("Shortcut")
-                        }
-                    } header: {
-                        Text("Sample")
                     }
                 }
 
@@ -215,6 +228,30 @@ struct ContentView: View {
                         }
                     } header: {
                         Text("LazyGrid")
+                    }
+                }
+            }
+            .navigationBarTitle("SwiftUI Hero 🦸🏻")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing){
+                    Button("navigationBarTrailing") {
+                        print("Pressed")
+                    }
+
+                    Button("😈") {
+                        print("Pressed")
+                    }
+                }
+
+                ToolbarItemGroup(placement: .bottomBar) {
+                    Button("First") {
+                        print("Pressed")
+                    }
+
+                    Spacer()
+
+                    Button("Second") {
+                        print("Pressed")
                     }
                 }
             }
