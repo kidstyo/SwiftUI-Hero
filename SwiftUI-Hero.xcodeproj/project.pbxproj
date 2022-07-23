@@ -11,6 +11,9 @@
 		8C08C3642854539D0080CD3C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C3622854539D0080CD3C /* BottomSheetView.swift */; };
 		8C08C366285457BD0080CD3C /* BottomSheetModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */; };
 		8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */; };
+		8C17FF6C288BC6650014A2C1 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17FF6B288BC6650014A2C1 /* UIDeviceExtension.swift */; };
+		8C17FF6D288BC6650014A2C1 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17FF6B288BC6650014A2C1 /* UIDeviceExtension.swift */; };
+		8C17FF6E288BC6650014A2C1 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17FF6B288BC6650014A2C1 /* UIDeviceExtension.swift */; };
 		8C25602C287B277B008E9B25 /* SampleEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25602B287B277B008E9B25 /* SampleEmojiView.swift */; };
 		8C25602D287B277B008E9B25 /* SampleEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25602B287B277B008E9B25 /* SampleEmojiView.swift */; };
 		8C256032287C4A5B008E9B25 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C256031287C4A5B008E9B25 /* EmojiTextField.swift */; };
@@ -212,6 +215,7 @@
 /* Begin PBXFileReference section */
 		8C08C3622854539D0080CD3C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		8C08C365285457BD0080CD3C /* BottomSheetModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModelView.swift; sourceTree = "<group>"; };
+		8C17FF6B288BC6650014A2C1 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		8C25602B287B277B008E9B25 /* SampleEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEmojiView.swift; sourceTree = "<group>"; };
 		8C256031287C4A5B008E9B25 /* EmojiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
 		8C256034287C5261008E9B25 /* EmojiTextField2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField2.swift; sourceTree = "<group>"; };
@@ -579,6 +583,7 @@
 				8CA4A3B128606A7D00589C56 /* IntExtension.swift */,
 				8CA4A3B428606A9600589C56 /* LocaleExtension.swift */,
 				8CCCED902869F35200C65896 /* CalendarExtension.swift */,
+				8C17FF6B288BC6650014A2C1 /* UIDeviceExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -952,6 +957,7 @@
 				8CD9E29B28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CCCEDAC286DF3C300C65896 /* Theme.swift in Sources */,
 				8CFF78322848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
+				8C17FF6C288BC6650014A2C1 /* UIDeviceExtension.swift in Sources */,
 				8C256035287C5261008E9B25 /* EmojiTextField2.swift in Sources */,
 				8C25602C287B277B008E9B25 /* SampleEmojiView.swift in Sources */,
 				8CFF782A2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
@@ -1029,6 +1035,7 @@
 				8CA5984F2852076A002E8264 /* CustomFontView.swift in Sources */,
 				8CD9E29C28424DA3006DB416 /* MaskView.swift in Sources */,
 				8CCCEDAD286DF3C300C65896 /* Theme.swift in Sources */,
+				8C17FF6D288BC6650014A2C1 /* UIDeviceExtension.swift in Sources */,
 				8CFF78332848FC5D00F1EACE /* ViewPersonIntentHandler.swift in Sources */,
 				8C256033287C4A5B008E9B25 /* EmojiTextField.swift in Sources */,
 				8CFF782B2848EEBC00F1EACE /* NewIntents.intentdefinition in Sources */,
@@ -1070,6 +1077,7 @@
 				8C96E2FB2877190800758443 /* ItemView.swift in Sources */,
 				8C96E2E82871EE9B00758443 /* AppStorage.swift in Sources */,
 				8C96E2F6287718ED00758443 /* ProTaskItemView.swift in Sources */,
+				8C17FF6E288BC6650014A2C1 /* UIDeviceExtension.swift in Sources */,
 				8C96E2F12873218000758443 /* ProView.swift in Sources */,
 				8C96E2CF28718FEE00758443 /* JustWidgets.swift in Sources */,
 				8C96E2ED28731E0500758443 /* ViewManager.swift in Sources */,

@@ -13,6 +13,8 @@ struct ContentView: View {
             List{
                 // MARK: Sample
                 Section {
+                    Text(UIDevice.isIPad ? "iPad" : (UIDevice.isIPhone ? "iPhone" : "\(UIDevice.current.userInterfaceIdiom.rawValue)"))
+
                     NavigationLink("ViewModelSample") {
                         ViewModelSampleView()
                             .navigationTitle(Text("ViewModelSample"))
@@ -234,10 +236,6 @@ struct ContentView: View {
             .navigationBarTitle("SwiftUI Hero 🦸🏻")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing){
-                    Button("navigationBarTrailing") {
-                        print("Pressed")
-                    }
-
                     Button("😈") {
                         print("Pressed")
                     }
