@@ -168,6 +168,8 @@
 		8CD9E2A12842511D006DB416 /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */; };
 		8CD9E2A22842511D006DB416 /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9E2A02842511D006DB416 /* ImageDownloadView.swift */; };
 		8CD9E2A728426114006DB416 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD9E2A628426114006DB416 /* CloudKit.framework */; };
+		8CDCBEB5288D8DB500559AD5 /* VStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCBEB4288D8DB500559AD5 /* VStackView.swift */; };
+		8CDCBEB6288D8DB500559AD5 /* VStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCBEB4288D8DB500559AD5 /* VStackView.swift */; };
 		8CFF781D2848ED7600F1EACE /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF781C2848ED7600F1EACE /* People.swift */; };
 		8CFF781E2848ED7600F1EACE /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF781C2848ED7600F1EACE /* People.swift */; };
 		8CFF78232848EDDE00F1EACE /* PeopleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF78222848EDDE00F1EACE /* PeopleViews.swift */; };
@@ -302,6 +304,7 @@
 		8CD9E2A3284253E0006DB416 /* SwiftUI-Hero--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Hero--iOS--Info.plist"; sourceTree = "<group>"; };
 		8CD9E2A4284260CC006DB416 /* SwiftUI-Hero (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Hero (iOS).entitlements"; sourceTree = "<group>"; };
 		8CD9E2A628426114006DB416 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		8CDCBEB4288D8DB500559AD5 /* VStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackView.swift; sourceTree = "<group>"; };
 		8CFF781C2848ED7600F1EACE /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		8CFF78222848EDDE00F1EACE /* PeopleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViews.swift; sourceTree = "<group>"; };
 		8CFF78292848EEBC00F1EACE /* NewIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NewIntents.intentdefinition; sourceTree = "<group>"; };
@@ -402,6 +405,7 @@
 			children = (
 				8C800B3A284F83D300CB7FFF /* LazyHStackView.swift */,
 				8C800B3D284F84CB00CB7FFF /* LazyVStackView.swift */,
+				8CDCBEB4288D8DB500559AD5 /* VStackView.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -943,6 +947,7 @@
 				8CD9E29E28424EBB006DB416 /* ScaleRotationView.swift in Sources */,
 				8C6D79ED2841BE53003EEF78 /* LabelView.swift in Sources */,
 				8C96E2AA287178D200758443 /* ThemeView.swift in Sources */,
+				8CDCBEB5288D8DB500559AD5 /* VStackView.swift in Sources */,
 				8C800B532850D69300CB7FFF /* PhotosPickerView.swift in Sources */,
 				8CA4A3C62868508700589C56 /* TextStyleView.swift in Sources */,
 				8C08C3632854539D0080CD3C /* BottomSheetView.swift in Sources */,
@@ -1061,6 +1066,7 @@
 				8C08C367285457BD0080CD3C /* BottomSheetModelView.swift in Sources */,
 				8C800B422850879000CB7FFF /* PHPicker.swift in Sources */,
 				8C800B562850D69300CB7FFF /* CameraPickerView.swift in Sources */,
+				8CDCBEB6288D8DB500559AD5 /* VStackView.swift in Sources */,
 				8C25602D287B277B008E9B25 /* SampleEmojiView.swift in Sources */,
 				8C96E2A428706AA400758443 /* MyDarkMode.swift in Sources */,
 				8CAFBA2C285DA3970026A6E7 /* DisclosureGroupView.swift in Sources */,

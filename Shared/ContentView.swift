@@ -204,6 +204,21 @@ struct ContentView: View {
                 Group{
                     // MARK: LazyStack
                     Section {
+                        NavigationLink("VStack") {
+                            VStackView()
+                                .navigationTitle(Text("VStack"))
+                        }
+
+                        NavigationLink("LazyVStack") {
+                            LazyVStackView()
+                                .navigationTitle(Text("LazyVStack"))
+                        }
+                    } header: {
+                        Text("Stack")
+                    }
+
+                    // MARK: LazyStack
+                    Section {
                         NavigationLink("LazyHStack") {
                             LazyHStackView()
                                 .navigationTitle(Text("LazyHStack"))
@@ -260,5 +275,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 13 Pro")
+
     }
 }
